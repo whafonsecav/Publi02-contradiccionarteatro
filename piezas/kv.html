@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>KV · Contra el dicho</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/sistema.css">
+<style>
+  html, body { margin: 0; background: #222; }
+  body { display: flex; flex-wrap: wrap; gap: 24px; padding: 0; }
+  body.solo { display: block; }
+</style>
+</head>
+<body>
+<script>window.KV_BASE = "../";</script>
+<script src="../js/kv.js"></script>
+<script src="../js/piezas-datos.js"></script>
+<script>
+  // ?v=maestro|amor|cordura|rebelion  → una sola pieza (para exportar a PNG). Sin parámetro: todas.
+  const v = new URLSearchParams(location.search).get("v");
+  const lista = v ? [PIEZAS[v]] : Object.values(PIEZAS);
+  if (v) document.body.classList.add("solo");
+  lista.forEach((c) => document.body.appendChild(KV.kv(c)));
+  document.fonts.ready.then(() => document.querySelectorAll(".kv").forEach((k) => KV.ajustar(k)));
+</script>
+</body>
+</html>
