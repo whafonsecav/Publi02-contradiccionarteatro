@@ -23,12 +23,17 @@
 
   /* ---- escala (y giro si el celular está vertical) ---- */
   function escalar() {
-    const w = innerWidth, h = innerHeight, vertical = h > w * 1.15 && w < 900;
+    const w = innerWidth || document.documentElement.clientWidth, h = innerHeight || document.documentElement.clientHeight;
+    if (!w || !h) { setTimeout(escalar, 250); return; }   // pestaña aún sin tamaño (abierta en segundo plano)
+    const vertical = h > w * 1.15 && w < 900;
     const s = Math.min((vertical ? h : w) / 1920, (vertical ? w : h) / 1080);
     E.style.transform = (vertical ? "rotate(90deg) " : "") + `scale(${s})`;
     document.body.classList.toggle("vertical", vertical);
   }
-  addEventListener("resize", escalar); escalar();
+  addEventListener("resize", escalar); addEventListener("orientationchange", escalar);
+  document.addEventListener("visibilitychange", escalar);
+  if (window.ResizeObserver) new ResizeObserver(escalar).observe(document.documentElement);
+  escalar();
 
   /* ---- barra, progreso e índice ---- */
   const prog = document.getElementById("progreso"), lista = document.getElementById("indice-lista"), indice = document.getElementById("indice");
