@@ -94,7 +94,7 @@
 .kv .barra { position: absolute; background: var(--tinta); }
 .kv .manus { position: absolute; background-size: cover; background-position: center; filter: sepia(.35) contrast(1.05); mix-blend-mode: multiply; }
 .kv .retrato { position: absolute; left: 6px; bottom: 0; height: 800px; filter: grayscale(1) contrast(1.12) brightness(1.03);
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 9%); mask-image: linear-gradient(to right, transparent 0, #000 9%); }
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 9%, #000 92%, transparent 100%); mask-image: linear-gradient(to right, transparent 0, #000 9%, #000 92%, transparent 100%); }
 .kv .collage { clip-path: polygon(-10% -10%, 110% -10%, 110% 97.6%, 96% 98.6%, 90% 97.2%, 82% 98.8%, 74% 97.4%, 66% 99%, 57% 97.6%, 49% 98.9%, 40% 97.3%, 31% 98.7%, 22% 97.5%, 13% 99%, 5% 97.4%, -10% 98.4%); }
 .kv .flor { position: absolute; transform: rotate(var(--rot, 0deg)); }
 .kv .orbitas { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }

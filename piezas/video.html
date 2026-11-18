@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Video 9:16 · Contra el dicho</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/sistema.css">
+<style>
+  /* Video vertical de 47,5 s. Toda la animación es una sola línea de tiempo que se puede llevar a cualquier segundo
+     (window.irA(t)), para renderizarla fotograma a fotograma. Sin parámetros se reproduce en vivo. */
+  @property --r { syntax: "<length>"; inherits: false; initial-value: 1900px; }
+  html, body { margin: 0; background: #000; overflow: hidden; height: 100%; }
+  #v { width: 1080px; height: 1920px; position: relative; overflow: hidden; transform-origin: top left; font-variant-numeric: lining-nums; color: var(--tinta); }
+  .e { position: absolute; inset: 0; overflow: hidden; }
+  .cab { position: absolute; left: 0; right: 0; top: 196px; text-align: center; }
+  .cab .l1 { font-family: var(--f-serif); font-weight: 800; font-size: 25px; letter-spacing: .12em; display: flex; align-items: center; gap: 26px; padding: 0 110px; }
+  .cab .l1::before, .cab .l1::after { content: ""; flex: 1; height: 2px; background: currentColor; }
+  .cab .l2 { font-family: var(--f-serif); font-weight: 800; font-size: 35px; letter-spacing: .05em; margin-top: 6px; }
+  #cam { position: absolute; left: 60px; top: 330px; width: 960px; height: 1350px; transform-origin: 47% 44%; }
+  #cam .kv.solo { transform: scale(1.5); transform-origin: top left; }
+  #cam .barra { transform-origin: bottom; }
+  #cam .orbitas * { stroke-dasharray: 100; }
+  #cam .tira { opacity: 0; }
+  .vin { position: absolute; inset: 0; background: radial-gradient(circle at 47% 47.5%, transparent calc(var(--r) * .62), #000 var(--r)); }
+  .nunca { position: absolute; left: 0; right: 0; top: 1330px; text-align: center; font-family: var(--f-maquina); font-size: 54px; color: #f3ecdd; letter-spacing: .02em; }
+  .e2 { background: #050505; color: #f3ecdd; }
+  .arco-luz { position: absolute; left: 90px; right: 90px; top: 330px; bottom: -10px; border-radius: 450px 450px 0 0; overflow: hidden; }
+  .arco-luz img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; display: block; filter: brightness(1.5); }
+  .e2 .rotulo { position: absolute; left: 150px; right: 150px; top: 210px; font-size: 26px; color: var(--amarillo); }
+  .e4 .tit4 { position: absolute; left: 90px; right: 90px; top: 210px; }
+  .tres { position: absolute; left: 45px; right: 45px; top: 560px; height: 850px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .tres div { border-radius: 160px 160px 0 0; overflow: hidden; position: relative; background: var(--c); }
+  .tres img { position: absolute; left: 50%; bottom: 0; height: 88%; transform: translateX(-50%); filter: grayscale(1) contrast(1.12); }
+  .e4 .pilares { position: absolute; left: 0; right: 0; top: 1436px; font-size: 104px; }
+  .e4 .dato { position: absolute; left: 0; right: 0; text-align: center; font-family: var(--f-serif); font-weight: 800; letter-spacing: .12em; font-size: 31px; text-transform: uppercase; }
+  .e5 .bloque-titulo { position: absolute; left: 100px; width: 880px; top: 400px; }
+  .e6 { text-align: center; }
+  .e6 .logo6 { position: absolute; left: 0; right: 0; top: 290px; }
+  .e6 .esl { position: absolute; left: 0; right: 0; top: 1040px; font-family: var(--f-mano2); font-size: 108px; line-height: 1; transform: rotate(-2deg); }
+  .e6 .esl u { text-decoration: none; background: linear-gradient(transparent 62%, var(--rojo) 62%, var(--rojo) 92%, transparent 92%); padding: 0 .1em; }
+  .e6 .info { position: absolute; left: 0; right: 0; top: 1220px; font-family: var(--f-sans); font-weight: 800; font-size: 42px; line-height: 1.35; }
+  .e6 .info small { display: block; font-family: var(--f-serif); font-weight: 700; font-size: 34px; }
+  .e6 .pilares { position: absolute; left: 0; right: 0; top: 1470px; font-size: 84px; }
+  .sub { position: absolute; left: 50%; top: 1500px; max-width: 880px; width: max-content; transform: translate(-50%, -50%) rotate(-1deg); opacity: 0; white-space: normal; text-align: center; text-transform: none; font-size: 41px; line-height: 1.22; padding: .42em .9em .34em; z-index: 9; }
+</style>
+</head>
+<body>
+<div id="v" class="papel">
+  <div class="e e1 papel">
+    <div class="cab"><div class="l1">CONTRADICCIÓN PRESENTA:</div><div class="l2">RELATOS INTENSOS PARA MENTES TRAVIESAS</div></div>
+    <div id="cam"></div>
+    <div class="vin"></div>
+    <div class="nunca">…nunca lo he dicho.</div>
+  </div>
+  <div class="e e2">
+    <div class="rotulo">UN TEATRO PEQUEÑO · BOGOTÁ</div>
+    <div class="arco-luz"><img src="../assets/img/escenario.webp" alt=""></div>
+  </div>
+  <div class="e e4 papel">
+    <div class="tit4 bloque-titulo" id="tit4"></div>
+    <div class="tres">
+      <div style="--c:var(--rojo)"><img src="../assets/img/retrato-amor.webp" alt=""></div>
+      <div style="--c:var(--azul)"><img src="../assets/img/retrato-cordura.webp" alt=""></div>
+      <div style="--c:var(--amarillo)"><img src="../assets/img/retrato-rebelion.webp" alt=""></div>
+    </div>
+    <div id="pil4"></div>
+    <div class="dato d1" style="top:1560px">10 monólogos · 5 distintos cada noche</div>
+    <div class="dato d2" style="top:1560px">Escritos y actuados por quien los vivió</div>
+  </div>
+  <div class="e e5 papel"><div class="bloque-titulo" id="tit5"></div></div>
+  <div class="e e6 papel">
+    <div class="logo6" id="logo6"></div>
+    <div class="esl">Alguien <u>tenía</u> que decirlo.</div>
+    <div class="info">FEBRERO 2027 · 8:00 P. M.<small>Teatro Cofal · Bogotá · Boletas en Tickean</small><small>@contradiccionarteatro</small></div>
+    <div id="pil6"></div>
+  </div>
+</div>
+<script>window.KV_BASE = "../";</script>
+<script src="../js/kv.js"></script>
+<script src="../js/piezas-datos.js"></script>
+<script>
+(async function () {
+  const T = 47.5, V = document.getElementById("v"), $ = (s, r) => (r || document).querySelector(s), $$ = (s, r) => [...(r || document).querySelectorAll(s)];
+  const q = new URLSearchParams(location.search);
+
+  /* ---- montaje ---- */
+  const kv = KV.collage(Object.assign({}, PIEZAS.maestro, { tira: null }));
+  $("#cam").appendChild(kv);
+  const TIRAS = [
+    { t: "Calladita te ves más bonita", x: 306, y: 520, r: -4, f: 27, entra: 2.6, sale: 29.4, a: "translate(160%, -330%) rotate(42deg)" },
+    { t: "La ropa sucia se lava en casa", x: 298, y: 592, r: 3, f: 24.5, entra: 6.4, sale: 29.0, a: "translate(-230%, 240%) rotate(-55deg)" },
+    { t: "Al mal tiempo, buena cara", x: 312, y: 452, r: -2, f: 27, entra: 8.9, sale: 28.6, a: "translate(110%, -520%) rotate(-38deg)" },
+  ];
+  TIRAS.forEach((o) => { o.el = KV.h(`<div class="tira" style="left:${o.x}px;top:${o.y}px;font-size:${o.f}px">${o.t}</div>`); kv.appendChild(o.el); });
+  $("#tit4").innerHTML = KV.linea([{ t: "RELATOS INTENSOS" }]) + KV.linea([{ t: "PARA MENTES TRAVIESAS" }]);
+  $("#tit5").innerHTML = PIEZAS.maestro.lineas.map((l) => KV.linea(l)).join("");
+  $("#pil4").innerHTML = KV.pilares(); $("#pil6").innerHTML = KV.pilares();
+  $("#logo6").innerHTML = KV.logo(300);
+  const SUBS = [
+    [0.95, 4.7, "De niña me dijeron: calladita te ves más bonita."],
+    [5.5, 7.8, "En la casa: la ropa sucia se lava en casa."],
+    [8.0, 9.95, "En el trabajo: al mal tiempo, buena cara."],
+    [10.55, 11.9, "Y aprendí."],
+    [12.75, 15.3, "Aprendí tan bien, que lo más importante que tengo por decir…"],
+    [19.25, 24.95, "Hasta que una noche, en un teatro pequeño, una desconocida se paró sola frente a mí…"],
+    [25.05, 26.3, "…y lo dijo."],
+    [26.85, 28.3, "Todo lo que yo me callo."],
+    [29.35, 31.7, "Nadie me había llevado la contraria tan bonito."],
+  ].map((s) => { const el = KV.h(`<div class="tira sub">${s[2]}</div>`); V.appendChild(el); return [s[0], s[1], el]; });
+
+  await document.fonts.ready;
+  await Promise.all($$("img").map((im) => im.decode ? im.decode().catch(() => {}) : 0));
+  KV.ajustar(V);
+
+  /* ---- línea de tiempo: an(elemento, propiedad, [[segundo, valor, curva hacia el siguiente], …]) ---- */
+  const anims = [];
+  function an(el, prop, pts) {
+    if (typeof el === "string") el = $(el);
+    const k = [];
+    if (pts[0][0] > 0) k.push({ [prop]: pts[0][1], offset: 0 });
+    pts.forEach((p) => k.push({ [prop]: p[1], offset: Math.min(1, p[0] / T), easing: p[2] || "linear" }));
+    if (pts[pts.length - 1][0] < T) k.push({ [prop]: pts[pts.length - 1][1], offset: 1 });
+    const a = el.animate(k, { duration: T * 1000, fill: "both" }); a.pause(); anims.push(a); return a;
+  }
+  const SUAVE = "cubic-bezier(.2,.8,.2,1)", REBOTE = "cubic-bezier(.3,1.55,.5,1)", ENTRA = "cubic-bezier(.6,0,.3,1)";
+
+  // Escena 1 y 3: el retrato, las tiras que la callan y las tiras que se rasgan
+  an(".e1", "opacity", [[0, 1], [18.0, 1], [18.2, 0], [28.3, 0], [28.5, 1], [31.85, 1], [32.1, 0]]);
+  an(".cab", "opacity", [[0.1, 0], [0.9, 1]]);
+  an($(".k-arco", kv), "clipPath", [[0.1, "inset(100% 0 0 0)", SUAVE], [1.3, "inset(0% 0 0 0)"]]);
+  $$(".barra", kv).forEach((b, i) => an(b, "transform", [[0.05 + i * 0.1, "scaleY(0)", SUAVE], [1 + i * 0.1, "scaleY(1)"]]));
+  $$(".manus", kv).forEach((m) => an(m, "opacity", [[0.5, 0], [1.2, 1]]));
+  an($(".k-retrato", kv), "opacity", [[0.35, 0], [1.2, 1]]);
+  an($(".k-retrato", kv), "transform", [[0.35, "translateY(70px)", SUAVE], [1.6, "translateY(0px)"]]);
+  an($(".k-flor", kv), "opacity", [[1.0, 0], [1.15, 1]]);
+  an($(".k-flor", kv), "transform", [[1.0, "rotate(-80deg) scale(.2)", REBOTE], [1.9, "rotate(-18deg) scale(1)"], [29.5, "rotate(-18deg) scale(1)", REBOTE], [30.4, "rotate(-10deg) scale(1.3)"]]);
+  $$(".orbitas *", kv).forEach((o) => an(o, "strokeDashoffset", [[0.9, 100, "ease"], [2.3, 0]]));
+  an("#cam", "transform", [[0, "scale(1)"], [18.2, "scale(1.17)"], [28.3, "scale(1.17)", "steps(1, end)"], [28.31, "scale(1.03)"], [32.1, "scale(1.09)"]]);
+  TIRAS.forEach((o) => {
+    const base = `translate(-50%, -50%) rotate(${o.r}deg) scale(1)`;
+    an(o.el, "opacity", [[o.entra, 0], [o.entra + 0.07, 1], [o.sale + 0.3, 1], [o.sale + 0.6, 0]]);
+    an(o.el, "transform", [[o.entra, `translate(-50%, -50%) rotate(${o.r + 15}deg) scale(2)`, REBOTE], [o.entra + 0.34, base], [o.sale, base, "cubic-bezier(.5,0,.9,.5)"], [o.sale + 0.6, `translate(-50%, -50%) ${o.a} scale(1.15)`]]);
+  });
+  an(".vin", "--r", [[10.4, "1900px", "cubic-bezier(.4,0,.6,1)"], [16.4, "230px"], [17.2, "230px", "ease-in"], [18.05, "0px"], [28.3, "0px", "steps(1, end)"], [28.31, "1900px"]]);
+  an(".nunca", "opacity", [[15.4, 0], [15.9, 1], [17.5, 1], [18.05, 0]]);
+
+  // Escena 2: el telón se abre
+  an(".e2", "opacity", [[18.1, 0], [18.2, 1], [28.3, 1], [28.5, 0]]);
+  an(".arco-luz", "clipPath", [[18.3, "inset(100% 0 0 0)", "cubic-bezier(.3,.7,.2,1)"], [20.7, "inset(0% 0 0 0)"]]);
+  an(".arco-luz img", "transform", [[18.3, "scale(1.28)"], [28.5, "scale(1.04)"]]);
+  an(".arco-luz img", "filter", [[24.9, "brightness(1.5)", "ease-out"], [25.25, "brightness(2.6)", "ease-out"], [26.6, "brightness(1.8)"]]);
+  an(".e2 .rotulo", "opacity", [[20.4, 0], [21.1, 1]]);
+
+  // Escena 4: tres arcos, tres pilares
+  an(".e4", "opacity", [[31.9, 0], [32.15, 1], [38.8, 1], [39.0, 0]]);
+  $$("#tit4 .linea").forEach((l, i) => { an(l, "opacity", [[32.2 + i * 0.15, 0], [32.6 + i * 0.15, 1]]); an(l, "transform", [[32.2 + i * 0.15, "translateY(40px)", SUAVE], [32.9 + i * 0.15, "translateY(0px)"]]); });
+  $$(".tres div").forEach((d, i) => an(d, "clipPath", [[32.25 + i * 0.22, "inset(100% 0 0 0)", SUAVE], [33.3 + i * 0.22, "inset(0% 0 0 0)"]]));
+  $$(".tres img").forEach((d, i) => an(d, "transform", [[32.3 + i * 0.22, "translateX(-50%) translateY(90px)", SUAVE], [33.7 + i * 0.22, "translateX(-50%) translateY(0px)"], [39, "translateX(-50%) translateY(-14px)"]]));
+  an("#pil4", "opacity", [[33.5, 0], [34.0, 1]]);
+  an(".d1", "opacity", [[35.2, 0], [35.6, 1], [36.4, 1], [36.7, 0]]);
+  an(".d2", "opacity", [[36.7, 0], [37.0, 1]]);
+
+  // Escena 5: el titular y el brochazo
+  an(".e5", "opacity", [[38.9, 0], [39.1, 1], [42.2, 1], [42.45, 0]]);
+  $$("#tit5 .linea").forEach((l, i) => { an(l, "opacity", [[39.05 + i * 0.13, 0], [39.3 + i * 0.13, 1]]); an(l, "transform", [[39.05 + i * 0.13, "translateY(50px)", SUAVE], [39.6 + i * 0.13, "translateY(0px)"]]); });
+  $$("#tit5 .brocha path").forEach((p, i) => { p.style.strokeDasharray = 100; an(p, "strokeDashoffset", [[40.0 + i * 0.25, 100, ENTRA], [40.38 + i * 0.25, 0]]); });
+  const si = $("#tit5 .seg-mano");
+  an(si, "opacity", [[40.3, 0], [40.38, 1]]);
+  an(si, "transform", [[40.3, "rotate(9deg) scale(2.3)", REBOTE], [40.75, "rotate(-4deg) scale(1)"]]);
+
+  // Escena 6: cierre
+  an(".e6", "opacity", [[42.3, 0], [42.6, 1]]);
+  an(".logo6", "opacity", [[42.45, 0], [42.9, 1]]);
+  an(".logo6", "transform", [[42.45, "scale(.86)", SUAVE], [43.3, "scale(1)"]]);
+  an(".esl", "opacity", [[44.1, 0], [44.5, 1]]);
+  an(".esl", "transform", [[44.1, "rotate(-2deg) translateY(30px)", SUAVE], [44.8, "rotate(-2deg) translateY(0px)"]]);
+  an(".e6 .info", "opacity", [[45.0, 0], [45.5, 1]]);
+  an("#pil6", "opacity", [[45.4, 0], [45.9, 1]]);
+
+  // Subtítulos
+  SUBS.forEach(([a, b, el]) => an(el, "opacity", [[a - 0.12, 0], [a, 1], [b, 1], [b + 0.15, 0]]));
+
+  /* ---- control ---- */
+  window.DUR = T;
+  window.irA = (t) => { anims.forEach((a) => { a.currentTime = Math.max(0, Math.min(T, t)) * 1000; }); };
+  if (q.has("render")) { window.irA(+q.get("t") || 0); }
+  else {
+    const esc = () => { const s = Math.min(innerWidth / 1080, innerHeight / 1920); V.style.transform = `scale(${s})`; V.style.marginLeft = (innerWidth - 1080 * s) / 2 + "px"; };
+    addEventListener("resize", esc); esc();
+    if (q.has("t")) window.irA(+q.get("t")); else anims.forEach((a) => a.play());
+  }
+  window.LISTO = true;
+})();
+</script>
+</body>
+</html>
