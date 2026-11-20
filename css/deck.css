@@ -637,3 +637,8 @@ body.quieto *, body.quieto *::before, body.quieto *::after { transition: none !i
 .pa-cred span { font: 800 24px var(--f-rot); letter-spacing: .2em; text-transform: uppercase; color: var(--rojo); }
 .pa-cred b { font: 700 36px/1.15 var(--f-rot); }
 .obj-car .cr-puntos { display: none; }
+
+/* Portada: logo de Contradicción Arteatro (cliente) a la derecha de la barra; la materia sigue al logo del Poli */
+.pa-barra { justify-content: flex-start; gap: 34px; }
+.pa-barra span { padding-left: 34px; border-left: 2px solid var(--tinta); line-height: 1.6; }
+.pa-ca { right: 96px; top: 40px; height: 110px; display: flex; align-items: center; font-size: 40px; color: var(--tinta); }
