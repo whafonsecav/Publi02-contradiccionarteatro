@@ -648,3 +648,20 @@ body.quieto *, body.quieto *::before, body.quieto *::after { transition: none !i
 .pa-af-2 { left: 1178px; top: 296px; width: 250px; rotate: -2deg; z-index: 2 !important; }
 .pa-af-3 { left: 1376px; top: 306px; width: 250px; rotate: 2.5deg; z-index: 3 !important; }
 .pa-af-4 { left: 1574px; top: 350px; width: 250px; rotate: 6deg; z-index: 4 !important; }
+
+/* Portada v4: texto más liviano a la izquierda, afiches más grandes; sin año */
+.pa-txt { left: 96px; width: 640px; top: 236px; }
+.pa-et { display: none; }
+.pa-tit { margin: 0; font-size: 134px; line-height: .86; }
+.pa-corto { width: 96px; height: 6px; margin: 30px 0 24px; }
+.pa-caso span { font-size: 20px; }
+.pa-caso b { font-size: 38px; }
+.pa-caso em { font-size: 25px; }
+.pa-cred { grid-template-columns: 1fr 1fr; }
+.pa-cred b { font-size: 32px; }
+.pa-papel { left: 840px; top: 206px; width: 960px; height: 600px; }
+.pa-lirio { left: 1712px; top: 150px; width: 180px; }
+.pa-af-1 { left: 780px; top: 292px; width: 310px; }
+.pa-af-2 { left: 1025px; top: 240px; width: 310px; }
+.pa-af-3 { left: 1270px; top: 252px; width: 310px; }
+.pa-af-4 { left: 1515px; top: 300px; width: 310px; }
