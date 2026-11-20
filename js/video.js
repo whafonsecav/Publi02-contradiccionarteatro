@@ -78,7 +78,7 @@
   function pintarAviso() {
     let t = "";
     if (modo === "espera") t = "Arranca en 3 s, sin sonido";
-    else if (leyendo) t = `Pausa para leer la escena ${actual + 1}`;
+    else if (leyendo) t = `Fin de la escena ${actual + 1} · play o → para seguir`;
     else if (modo === "corrido") t = sonido ? "De corrido, con sonido" : "De corrido, sin sonido";
     else t = `Escena ${actual + 1} · ${sonido ? "con sonido" : "sin sonido"}`;
     avisoTxt.textContent = t;
@@ -90,17 +90,12 @@
   }
   function limpiarLectura() { clearTimeout(tLectura); leyendo = false; barraLectura(false); }
   function reproducir() { const pr = vid.play(); if (pr && pr.catch) pr.catch(() => {}); }
-  function pausaLectura(k) {
+  function pausaLectura(k) {   // al final de cada escena: se queda quieto hasta play, clic o →; la 7 vuelve a empezar con sonido
     if (leyendo) return;
+    if (k >= ESC.length - 1) { corrido(); return; }
     leyendo = true; vid.pause();
-    // si el aviso llegó tarde, vuelve al último cuadro de esa escena y muestra su tarjeta
-    if ((vid.currentTime || 0) > ESC[k].t1 - 0.02 && k < ESC.length - 1) { try { vid.currentTime = ESC[k].t1 - 0.05; } catch (e) { /* nada */ } }
-    bloqueo = performance.now() + 400; poner(k); barraLectura(true); pintarAviso();
-    tLectura = setTimeout(() => {
-      leyendo = false; barraLectura(false);
-      if (!activo) return;
-      if (k < ESC.length - 1) { objetivo = k + 1; bloqueo = performance.now() + 350; reproducir(); pintarAviso(); } else corrido();
-    }, LECTURA);
+    if ((vid.currentTime || 0) > ESC[k].t1 - 0.02) { try { vid.currentTime = ESC[k].t1 - 0.05; } catch (e) { /* nada */ } }
+    bloqueo = performance.now() + 400; poner(k); pintarAviso();
   }
   function corrido() {   // después de la escena 7: desde el inicio, con sonido y en bucle
     modo = "corrido"; sonido = true; vid.loop = true; bloqueo = performance.now() + 600;
