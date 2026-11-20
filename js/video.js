@@ -66,7 +66,7 @@
   const tarjetas = [...caja.querySelectorAll(".ve")];
 
   /* ---------- estado ---------- */
-  let actual = -1, activo = false, raf = 0, bloqueo = 0, sonido = false, modo = "espera", leyendo = false, tArranque = 0, tLectura = 0, objetivo = 0;
+  let fase = "fuera", actual = -1, activo = false, raf = 0, bloqueo = 0, sonido = false, modo = "espera", leyendo = false, tArranque = 0, tLectura = 0, objetivo = 0;
   const btnSon = document.getElementById("v-sonido"), btnPlay = document.getElementById("v-play"), aviso = document.getElementById("v-aviso"), avisoTxt = aviso.querySelector("span"), avisoBarra = aviso.querySelector("i");
   function poner(n) {
     if (n === actual) return;
@@ -77,8 +77,9 @@
   }
   function pintarAviso() {
     let t = "";
-    if (modo === "espera") t = "Arranca en 3 s, sin sonido";
-    else if (leyendo) t = `Fin de la escena ${actual + 1} · play o → para seguir`;
+    if (fase === "espera") t = "Arranca en 3 s, con sonido";
+    else if (fase === "intro") t = "El video completo, con sonido";
+    else if (leyendo) t = actual === ESC.length - 1 ? "Fin del video · → para seguir" : `Fin de la escena ${actual + 1} · play o → para seguir`;
     else if (modo === "corrido") t = sonido ? "De corrido, con sonido" : "De corrido, sin sonido";
     else t = `Escena ${actual + 1} · ${sonido ? "con sonido" : "sin sonido"}`;
     avisoTxt.textContent = t;
@@ -90,12 +91,21 @@
   }
   function limpiarLectura() { clearTimeout(tLectura); leyendo = false; barraLectura(false); }
   function reproducir() { const pr = vid.play(); if (pr && pr.catch) pr.catch(() => {}); }
-  function pausaLectura(k) {   // al final de cada escena: se queda quieto hasta play, clic o →; la 7 vuelve a empezar con sonido
+  function pausaLectura(k) {   // al final de cada escena se queda quieto hasta play, clic o →
     if (leyendo) return;
-    if (k >= ESC.length - 1) { corrido(); return; }
     leyendo = true; vid.pause();
-    if ((vid.currentTime || 0) > ESC[k].t1 - 0.02) { try { vid.currentTime = ESC[k].t1 - 0.05; } catch (e) { /* nada */ } }
+    if (k < ESC.length - 1 && (vid.currentTime || 0) > ESC[k].t1 - 0.02) { try { vid.currentTime = ESC[k].t1 - 0.05; } catch (e) { /* nada */ } }
     bloqueo = performance.now() + 400; poner(k); pintarAviso();
+  }
+  function ponerFase(f) { fase = f; lam.classList.toggle("v-espera", f === "espera"); lam.classList.toggle("v-intro", f === "espera" || f === "intro"); pintarAviso(); }
+  function empezarIntro() {   // el video completo, centrado y con sonido
+    clearTimeout(tArranque); ponerFase("intro"); modo = "intro"; sonido = true; vid.loop = false; limpiarLectura();
+    try { vid.currentTime = 0; } catch (e) { /* nada */ }
+    pintarSonido(); reproducir();
+  }
+  function aGuiado(demora) {   // el celular se va a la izquierda y aparece el storyline; arranca la escena 1
+    clearTimeout(tArranque); vid.pause(); ponerFase("guiado"); modo = "guiado"; poner(0);
+    tArranque = setTimeout(() => { if (activo && fase === "guiado") irEscena(0); }, demora);
   }
   function corrido() {   // después de la escena 7: desde el inicio, con sonido y en bucle
     modo = "corrido"; sonido = true; vid.loop = true; bloqueo = performance.now() + 600;
@@ -125,16 +135,16 @@
     vid.muted = !sonido;
     btnSon.classList.toggle("on", sonido);
     btnSon.querySelector("use").setAttribute("href", sonido ? "#i-sonido" : "#i-mudo");
-    DECK.musica.bajar(activo && sonido && !vid.paused);
+    DECK.musica.bajar(activo);
     pintarAviso();
   }
   function alternarSonido() { sonido = !sonido; pintarSonido(); }
   function alternarPlay() {   // nunca toca el sonido
-    if (modo === "espera") { clearTimeout(tArranque); modo = "guiado"; objetivo = escenaEn(vid.currentTime || 0); }
-    if (leyendo) { limpiarLectura(); if (objetivo < ESC.length - 1) { objetivo++; bloqueo = performance.now() + 350; reproducir(); } else corrido(); pintarAviso(); return; }
+    if (fase === "espera") { empezarIntro(); return; }
+    if (leyendo) { if (objetivo < ESC.length - 1) { limpiarLectura(); objetivo++; bloqueo = performance.now() + 350; reproducir(); pintarAviso(); } return; }
     if (vid.paused) reproducir(); else vid.pause();
   }
-  function pintarPlay() { btnPlay.querySelector("use").setAttribute("href", vid.paused ? "#i-play" : "#i-pausa"); DECK.musica.bajar(activo && sonido && !vid.paused); }
+  function pintarPlay() { btnPlay.querySelector("use").setAttribute("href", vid.paused ? "#i-play" : "#i-pausa"); DECK.musica.bajar(activo); }
 
   btnSon.addEventListener("click", (e) => { e.stopPropagation(); alternarSonido(); });
   btnPlay.addEventListener("click", (e) => { e.stopPropagation(); alternarPlay(); });
@@ -142,22 +152,29 @@
   vid.addEventListener("click", (e) => { e.stopPropagation(); alternarPlay(); });
   vid.addEventListener("play", pintarPlay); vid.addEventListener("pause", pintarPlay);
   vid.addEventListener("timeupdate", () => { if (activo) dibujar(); });   // respaldo si rAF se detiene
-  vid.addEventListener("ended", () => { if (activo && modo === "guiado") pausaLectura(ESC.length - 1); });
+  vid.addEventListener("ended", () => { if (!activo) return; if (fase === "intro") aGuiado(1300); else if (modo === "guiado") pausaLectura(ESC.length - 1); });
   addEventListener("keydown", (e) => { if (activo && (e.key === "v" || e.key === "V") && !e.ctrlKey && !e.metaKey && !e.altKey) alternarSonido(); });
 
   DECK.registrar("video", {
     entrar() {
-      activo = true; modo = "espera"; sonido = false; vid.loop = false; actual = -1;
+      activo = true; sonido = true; vid.loop = false; actual = -1; objetivo = 0; modo = "espera";
       limpiarLectura(); clearTimeout(tArranque); vid.pause();
       try { vid.currentTime = 0; } catch (e) { /* sin metadatos */ }
-      poner(0); pintarSonido(); pintarPlay();
-      objetivo = 0;
-      tArranque = setTimeout(() => { if (activo && modo === "espera") { modo = "guiado"; objetivo = 0; reproducir(); pintarAviso(); } }, ESPERA);
+      ponerFase("espera"); poner(0); pintarSonido(); pintarPlay();   // la música se apaga con fundido
+      tArranque = setTimeout(() => { if (activo && fase === "espera") empezarIntro(); }, ESPERA);
       cancelAnimationFrame(raf); raf = requestAnimationFrame(bucle);
     },
-    salir() { activo = false; cancelAnimationFrame(raf); clearTimeout(tArranque); limpiarLectura(); vid.pause(); DECK.musica.bajar(false); },
-    sig() { if (actual < ESC.length - 1) { irEscena(actual + 1); return true; } return false; },
-    ant() { if (actual > 0) { irEscena(actual - 1); return true; } return false; },
+    salir() {   // al salir: pausa y deja todo listo para empezar de cero
+      activo = false; cancelAnimationFrame(raf); clearTimeout(tArranque); limpiarLectura(); vid.pause();
+      try { vid.currentTime = 0; } catch (e) { /* nada */ }
+      modo = "espera"; objetivo = 0; actual = -1; poner(0); ponerFase("fuera"); DECK.musica.bajar(false);
+    },
+    sig() {
+      if (fase !== "guiado") { aGuiado(500); return true; }   // → durante el video completo salta al modo escena por escena
+      if (actual < ESC.length - 1) { irEscena(leyendo ? actual + 1 : Math.max(actual + 1, objetivo)); return true; }
+      return false;   // después de la escena 7, → pasa a Gracias
+    },
+    ant() { if (fase !== "guiado") return false; if (actual > 0) { irEscena(actual - 1); return true; } return false; },
   });
   poner(0);
 })();
