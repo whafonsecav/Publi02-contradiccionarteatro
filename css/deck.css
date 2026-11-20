@@ -642,3 +642,9 @@ body.quieto *, body.quieto *::before, body.quieto *::after { transition: none !i
 .pa-barra { justify-content: flex-start; gap: 34px; }
 .pa-barra span { padding-left: 34px; border-left: 2px solid var(--tinta); line-height: 1.6; }
 .pa-ca { right: 96px; top: 40px; height: 110px; display: flex; align-items: center; font-size: 40px; color: var(--tinta); }
+
+/* Portada: los 4 monólogos de la noche, en abanico (se tocan solo en los bordes; las caras quedan libres) */
+.pa-af-1 { left: 980px; top: 340px; width: 250px; rotate: -6deg; z-index: 1 !important; }
+.pa-af-2 { left: 1178px; top: 296px; width: 250px; rotate: -2deg; z-index: 2 !important; }
+.pa-af-3 { left: 1376px; top: 306px; width: 250px; rotate: 2.5deg; z-index: 3 !important; }
+.pa-af-4 { left: 1574px; top: 350px; width: 250px; rotate: 6deg; z-index: 4 !important; }
