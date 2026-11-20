@@ -729,3 +729,7 @@ body.quieto *, body.quieto *::before, body.quieto *::after { transition: none !i
 /* Aviso del video: pequeño y sutil, debajo de los botones */
 .tel > .tel-aviso { background: none; border: 0; font: 600 18px var(--f-rot); opacity: .7; padding: 4px 0; }
 .tel > .tel-aviso i { height: 3px; }
+
+/* Natalia contada como relato: un párrafo grande por paso */
+.escena-n .narra { font: 500 42px/1.38 var(--f-rot); margin-top: 18px; }
+.escena-n .narra mark { padding: 0 .12em; }
