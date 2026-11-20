@@ -714,3 +714,11 @@ body.quieto *, body.quieto *::before, body.quieto *::after { transition: none !i
 .v-titulo .disp { font-size: 140px; line-height: .9; margin: 10px 0 22px; }
 .v-titulo p { font: 600 34px/1.3 var(--f-rot); }
 #video.v-intro .v-titulo { opacity: 1; transform: none; }
+
+/* El aviso del video va FUERA de la pantalla, debajo del celular: nunca tapa los textos del video */
+.tel { top: 96px; height: 744px; }
+.tel > .tel-aviso { top: calc(100% + 12px); bottom: auto; left: 0; right: 0; background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .28); }
+.tel-ctrl { top: 914px; }
+
+/* Mientras el video completo suena centrado, ningún aviso cerca de la pantalla */
+#video.v-intro .tel-aviso { opacity: 0; }
