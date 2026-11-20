@@ -603,3 +603,23 @@ mark { color: inherit; padding: 0 .08em; background: linear-gradient(var(--resal
 
 body.reducido .lam *, body.reducido .lam, body.reducido .a { transition-duration: .2s !important; transition-delay: 0s !important; animation: none !important; }
 body.quieto *, body.quieto *::before, body.quieto *::after { transition: none !important; animation: none !important; }
+
+/* ---------- Portada académica (sin adelantar la campaña) ---------- */
+.portada .pa-logo { left: 110px; top: 84px; width: 380px; }
+.pa-txt { left: 110px; top: 350px; width: 800px; }
+.pa-et { font: 800 28px var(--f-cuerpo, "Montserrat", sans-serif); letter-spacing: .14em; text-transform: uppercase; color: var(--rojo); }
+.pa-tit { margin: 10px 0 0; font-family: var(--f-disp, serif); font-size: 124px; white-space: nowrap; line-height: .95; color: var(--tinta); }
+.pa-caso { margin-top: 34px; display: flex; flex-direction: column; gap: 6px; font-family: "Montserrat", sans-serif; color: var(--tinta); }
+.pa-caso span { font-size: 24px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--rojo); }
+.pa-caso b { font-size: 44px; font-weight: 800; line-height: 1.05; }
+.pa-caso i { font-style: normal; font-size: 28px; font-weight: 600; }
+.pa-cred { left: 110px; top: 790px; width: 820px; border-top: 4px solid var(--tinta); padding-top: 20px; display: grid; grid-template-columns: 1fr; gap: 10px; font-family: "Montserrat", sans-serif; color: var(--tinta); }
+.pa-cred div { display: flex; gap: 18px; align-items: baseline; }
+.pa-cred span { min-width: 220px; font-size: 22px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--rojo); }
+.pa-cred b { font-size: 30px; font-weight: 700; white-space: nowrap; }
+.pa-af { width: 290px; margin: 0; background: #fff; padding: 9px; box-shadow: 0 24px 46px rgba(40, 25, 5, .32); }
+.pa-af img { display: block; width: 100%; height: auto; }
+.pa-af-1 { left: 960px; top: 250px; rotate: -3deg; }
+.pa-af-2 { left: 1272px; top: 190px; rotate: 1.5deg; }
+.pa-af-3 { left: 1584px; top: 250px; rotate: 3.5deg; }
+.pa-pie { left: 960px; width: 914px; top: 690px; text-align: center; font: 600 24px "Montserrat", sans-serif; color: var(--tinta); }

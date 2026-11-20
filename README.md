@@ -1,7 +1,7 @@
 ﻿# Relatos de intensos vs. Relatos Intensos · Relatos Intensos 2027
 
 Campaña para **Relatos Intensos para Mentes Traviesas**, el show de monólogos de Contradicción Arteatro (Bogotá).
-Parcial final de Publicidad 2 · Politécnico Grancolombiano · William Fonseca y Mariana Silva · Prof. Rüdiger Stuart González.
+Parcial final de Publicidad 2 · Politécnico Grancolombiano · William Fonseca y Mariana Silva · Prof. Rüdiger Estuart González.
 
 - **Concepto creativo:** «Del intenso que fastidia a lo intenso que engancha».
 - **Titular:** «Relatos de intensos vs. Relatos Intensos» · **Tema:** «El ex que no se calla» · **Eslogan:** «Monólogos para reír… mientras puedas».
