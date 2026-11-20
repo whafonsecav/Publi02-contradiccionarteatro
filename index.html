@@ -3,467 +3,566 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contra el dicho · Relatos Intensos 2027</title>
-<meta name="description" content="Campaña 2027 para Relatos Intensos para Mentes Traviesas, de Contradicción Arteatro. Parcial final de Publicidad 2.">
-<meta property="og:title" content="Contra el dicho · Relatos Intensos 2027">
-<meta property="og:description" content="De eso sí se habla. Campaña para el show de monólogos de Contradicción Arteatro.">
-<meta property="og:image" content="assets/piezas/kv-maestro.jpg">
+<title>Relatos de intensos vs. Relatos Intensos · Parcial final</title>
+<meta name="description" content="Campaña «Relatos de intensos vs. Relatos Intensos» para Relatos Intensos para Mentes Traviesas, de Contradicción Arteatro. Parcial final de Publicidad 2 · William Fonseca y Mariana Silva.">
+<meta property="og:title" content="Relatos de intensos vs. Relatos Intensos">
+<meta property="og:description" content="Monólogos para reír… mientras puedas. Campaña para el show de monólogos de Contradicción Arteatro.">
+<meta property="og:image" content="assets/kv/kv-1-la-llamada.webp">
 <link rel="icon" href="assets/logo/favicon.svg">
+<link rel="preload" href="assets/kv/kv-1-la-llamada.webp" as="image">
 <link rel="stylesheet" href="css/sistema.css">
 <link rel="stylesheet" href="css/deck.css">
 </head>
 <body>
+
+<!-- íconos en línea (sin librerías) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo-ca" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="square"><rect x="3" y="3" width="94" height="94"/><path d="M17 44H84M84 44L67 31"/><path d="M97 56H17M17 56L34 69"/></g></symbol>
+  <symbol id="i-persona" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+  <symbol id="i-maletin" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+  <symbol id="i-billete" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9v6M18 9v6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.3-7-11.5a7 7 0 0 1 14 0C19 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-grupo" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 14.4c3 0 5.5 2.1 5.5 5.6"/></symbol>
+  <symbol id="i-celular" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></symbol>
+  <symbol id="i-cubiertos" viewBox="0 0 24 24"><path d="M6 3v7c0 1.2.9 2 2 2s2-.8 2-2V3M8 12v9M16 21V3c2 1 3 3.5 3 7h-3"/></symbol>
+  <symbol id="i-taza" viewBox="0 0 24 24"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10.5h1.5a2.5 2.5 0 0 1 0 5H16M8 3v3M12 3v3"/></symbol>
+  <symbol id="i-copa" viewBox="0 0 24 24"><path d="M7 3h10l-1 6a4 4 0 0 1-8 0zM12 13v7M8 21h8"/></symbol>
+  <symbol id="i-libro" viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13M8 7h7"/></symbol>
+  <symbol id="i-mascara" viewBox="0 0 24 24"><path d="M4 4h16v7a8 8 0 0 1-16 0zM8.5 9.5h.01M15.5 9.5h.01M9 14c1.8 1.4 4.2 1.4 6 0"/></symbol>
+  <symbol id="i-birrete" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11v5c3 2.5 9 2.5 12 0v-5M22 9v5"/></symbol>
+  <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-sofa" viewBox="0 0 24 24"><path d="M4 11V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3M2 12a2 2 0 0 1 4 0v2h12v-2a2 2 0 0 1 4 0v5H2zM5 17v2M19 17v2"/></symbol>
+  <symbol id="i-pregunta" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.6v.6M12 17h.01"/></symbol>
+  <symbol id="i-ciclo" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-14 5.3M4 12a8 8 0 0 1 14-5.3M18 3v4h-4M6 21v-4h4"/></symbol>
+  <symbol id="i-moneda" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.4 0-2.5.8-2.5 2s1 1.6 2.5 2 2.5.9 2.5 2-1.1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6.5V8M12 16v1.5"/></symbol>
+  <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 7h18v3a2 2 0 0 0 0 4v3H3v-3a2 2 0 0 0 0-4zM14 7v2M14 11v2M14 15v2"/></symbol>
+  <symbol id="i-silla" viewBox="0 0 24 24"><path d="M6 11V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6M4 11h16v5H4zM6 16v4M18 16v4"/></symbol>
+  <symbol id="i-ojo" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-estrella" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+  <symbol id="i-bombillo" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="currentColor"/></symbol>
+  <symbol id="i-pausa" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke-width="3"/></symbol>
+  <symbol id="i-sonido" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zM16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></symbol>
+  <symbol id="i-mudo" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zM17 9.5l5 5M22 9.5l-5 5"/></symbol>
+  <symbol id="i-musica" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol>
+  <symbol id="i-pantalla" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+  <symbol id="i-indice" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></symbol>
+  <symbol id="i-izq" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-der" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-camara" viewBox="0 0 24 24"><rect x="2.5" y="6" width="13" height="12" rx="2"/><path d="M15.5 10.5l6-3.5v10l-6-3.5"/></symbol>
+  <symbol id="i-onda" viewBox="0 0 24 24"><path d="M3 12h1M6.5 9v6M10 5v14M13.5 8v8M17 6v12M20.5 10v4"/></symbol>
+  <symbol id="i-texto" viewBox="0 0 24 24"><path d="M5 7V4h14v3M12 4v16M9 20h6"/></symbol>
+  <symbol id="i-forma" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.5"/><rect x="12.5" y="12.5" width="8.5" height="8.5"/><path d="M3 21l4-7 4 7z"/></symbol>
+  <symbol id="i-radio" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="12" rx="2"/><circle cx="15.5" cy="15" r="3"/><path d="M6 13h4M6 16h4M7 9l10-5"/></symbol>
+  <symbol id="i-imagen" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.8"/><path d="M21 16l-5-5-9 9"/></symbol>
+  <symbol id="i-telefono" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-trago" viewBox="0 0 24 24"><path d="M5 4h14l-7 8zM12 12v8M8 20h8M15 4l3-2"/></symbol>
+  <symbol id="i-corazon" viewBox="0 0 24 24"><path d="M12 20s-8-4.7-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.3 12 20 12 20z"/></symbol>
+  <symbol id="i-comillas" viewBox="0 0 24 24"><path d="M4 17c3 0 5-2 5-5V7H4v5h5M14 17c3 0 5-2 5-5V7h-5v5h5"/></symbol>
+  <symbol id="i-risa" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M7.5 13.5c1 2.4 2.6 3.5 4.5 3.5s3.5-1.1 4.5-3.5zM8.5 9.5h.01M15.5 9.5h.01"/></symbol>
+  <symbol id="i-sorpresa" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="15.5" r="2.2"/><path d="M8.5 10h.01M15.5 10h.01M7.5 7l2-1M16.5 7l-2-1"/></symbol>
+  <symbol id="i-triste" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 16.5c1-1.3 2.2-2 3.5-2s2.5.7 3.5 2M8.5 10h.01M15.5 10h.01M8.5 12.5v2"/></symbol>
+  <symbol id="i-asco" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 15.5c1.5-1 2.5 0 4 0s2.5-1 4 0M7.8 9.4l2.2 1.1M16.2 9.4L14 10.5"/></symbol>
+  <symbol id="i-arena" viewBox="0 0 24 24"><path d="M7 3h10M7 21h10M8 3v3l4 6-4 6v3M16 3v3l-4 6 4 6v3"/></symbol>
+  <symbol id="i-calendario" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h2M14 14h2M8 17h2M14 17h2"/></symbol>
+  <symbol id="i-abajo" viewBox="0 0 24 24"><path d="M7 13V4H4v9zM7 13l4 7c1.5 0 2.3-1.2 2-2.6L12.4 15H18a2 2 0 0 0 2-2.3l-1-6A2 2 0 0 0 17 5H7"/></symbol>
+  <symbol id="i-foco" viewBox="0 0 24 24"><path d="M12 2v3M4.2 5.2l2.1 2.1M19.8 5.2l-2.1 2.1M6 21l3-11h6l3 11z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-escenario" viewBox="0 0 24 24"><path d="M3 20h18M4 20V9a8 4 0 0 1 16 0v11M8 20v-6h8v6"/></symbol>
+  <symbol id="i-pluma" viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16zM14 6l3 3"/></symbol>
+  <symbol id="i-reinicio" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4 4v4h4"/></symbol>
+  <symbol id="i-cama" viewBox="0 0 24 24"><path d="M3 18V7M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="1.8"/></symbol>
+</svg>
+
 <div id="marco">
-<main id="escena" class="papel">
+<main id="escena" data-tono="claro">
 
-<!-- 0 · PORTADA -->
-<section class="lam portada" data-cap="0" data-titulo="Portada">
-  <div class="p-cab a a-baja"><div class="l1">CONTRADICCIÓN PRESENTA:</div><div class="l2">RELATOS INTENSOS PARA MENTES TRAVIESAS</div></div>
-  <div class="p-col"><div data-kv="maestro" data-s="0.96"></div></div>
-  <div class="p-der">
-    <div class="rotulo a a-sube" style="--d:.5s">CAMPAÑA 2027 · PARCIAL FINAL</div>
-    <div class="bloque-titulo" data-lineas="maestro"></div>
-    <div class="p-txt">
-      <p class="p-sub a a-sube" style="--d:2.5s">Una campaña para que <b>Relatos Intensos</b> sea el show de monólogos mejor valorado de Bogotá.</p>
-      <div class="p-concepto a a-sube" style="--d:2.8s"><span class="et">Concepto creativo</span><span class="mano">Contra el dicho</span></div>
-      <div class="p-cred a a-sube" style="--d:3.1s"><b>Publicidad 2 · Corte 3 · Parcial final</b><br>William Fonseca y Mariana Silva<br>Docente: Rüdiger Stuart González<br>Politécnico Grancolombiano · Noviembre de 2026</div>
+<!-- ============ PORTADA ============ -->
+<section class="lam portada" id="portada" data-titulo="Portada" data-tapa="0">
+  <div class="p-sup a a-baja"><div class="cabecera">Parcial final · Publicidad 2 · Campaña 2027</div></div>
+  <div class="p-txt">
+    <div class="et a a-sube" style="--d:.2s">Una campaña para Relatos Intensos para Mentes Traviesas · Contradicción Arteatro</div>
+    <div class="p-duelo">
+      <span class="disp kin" style="--d:.4s">Relatos de intensos</span>
+      <span class="vs a a-pop" style="--d:1s"><span>VS.</span></span>
+      <span class="disp kin" style="--d:1.2s">Relatos Intensos</span>
     </div>
   </div>
-  <div class="p-pie a a-sube" style="--d:3.3s">
-    <div data-pilares></div>
-    <div class="p-firma"><span data-logo="78"></span><span class="eslogan">Alguien <u>tenía</u> que decirlo.</span></div>
+  <div class="p-cred a a-sube" style="--d:1.6s"><b>William Fonseca y Mariana Silva</b><span>Prof. Rüdiger Stuart González</span><span>Politécnico Grancolombiano · 2027</span></div>
+  <figure class="afiche af-1 a a-der" style="--d:.5s"><img src="assets/afiches/afiche-llamada.webp" alt="Afiche de «¿Me devuelves la llamada cuando puedas?», de Samantha Agudelo"></figure>
+  <figure class="afiche af-3 a a-der" style="--d:.7s"><img src="assets/afiches/afiche-manual.webp" alt="Afiche de «Manual para superar la muerte de tu madre», de Mayra Alejandra Frade"></figure>
+  <figure class="afiche af-2 a a-der" style="--d:.9s"><img src="assets/afiches/afiche-cansado.webp" alt="Afiche de «Estoy cansado», de Nicolás Revi"></figure>
+  <img class="p-lirio a a-pop" style="--d:1.4s" src="assets/collage/lirio-amarillo.webp" alt="">
+  <div class="p-franja franja a a-mask" style="--d:1.9s"><span class="l1">Monólogos para reír…</span><span class="l2">mientras puedas.</span></div>
+</section>
+
+<!-- ============ TAPA 1 ============ -->
+<section class="lam tapa" id="tapa-1" data-titulo="1 · Buyer persona" data-tapa="1" data-sub="0" data-tono="oscuro" style="--fondo:var(--rojo);--arco:var(--crema);--num:var(--rojo);--txt:var(--crema)">
+  <div class="t-arco a a-arco"><span class="t-num disp">1</span></div>
+  <img class="t-lirio a a-pop" style="--d:.9s" src="assets/collage/lirio-amarillo.webp" alt="">
+  <div class="t-txt">
+    <div class="et a a-sube" style="--d:.3s">Punto 1 del caso</div>
+    <h2 class="t-tit disp kin" style="--d:.35s">Buyer persona</h2>
+    <p class="t-pide a a-sube" style="--d:.65s">Lo construimos con la función del 13 de noviembre en Casa Teatro Cofal, sus redes y datos de Bogotá.</p>
+    <ol class="t-lista">
+      <li class="a a-sube" style="--d:.85s"><b>1a</b>Perfil del público</li>
+      <li class="a a-sube" style="--d:.95s"><b>1b</b>Emociones y sentimientos</li>
+      <li class="a a-sube" style="--d:1.05s"><b>1c</b>Conflictos y necesidades</li>
+      <li class="a a-sube" style="--d:1.15s"><b>→</b>Cierre: Natalia, nuestro buyer persona</li>
+    </ol>
   </div>
 </section>
 
-<!-- 1 · EL ENCARGO -->
-<section class="lam" data-cap="1" data-titulo="El encargo">
-  <div class="enc"><div class="rotulo izq">01 · EL ENCARGO</div><h2><span class="titulo b">Lo que nos pidió el cliente</span></h2></div>
-  <div class="zona g-enc">
-    <div class="col">
-      <div class="cifras">
-        <div class="cifra a a-sube"><b><span data-cuenta="1">1</span></b><span>año de creada<br>la compañía</span></div>
-        <div class="cifra a a-sube" style="--d:.15s"><b>≈<span data-cuenta="1000">1.000</span></b><span>asistentes a<br>sus shows</span></div>
-      </div>
-      <div class="tarj meta a a-sube" style="--d:.3s">
-        <div class="et">Objetivo de marketing</div>
-        <p class="g">Que los monólogos pasen de aportar el <b>20 %</b> al <b class="c-rojo">30 %</b> de los asistentes.</p>
-        <div class="arcos10"><i class="l"></i><i class="l"></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        <div class="arcos10-pie"><span>Hoy: 2 de cada 10</span><span class="c-rojo">Meta 2027: 3 de cada 10</span></div>
-        <p class="g y4">Y lograr <b>4 temporadas</b> antes de terminar 2027.</p>
-      </div>
+<!-- 1a · PERFIL -->
+<section class="lam" id="perfil" data-titulo="1a · Perfil del público" data-tapa="1" data-sub="1" data-rot="1a">
+  <header class="enc"><div class="rot"></div><h2 class="tit largo kin">Perfil del público interesado en este tipo de espectáculos</h2></header>
+  <div class="chips perfil-chips a a-sube" style="--d:.5s"><span data-p="1" data-hasta="1">Quiénes son</span><span data-p="2" data-hasta="2">Dónde están</span><span data-p="3" data-hasta="3">Cuánto pesa el teatro</span><span data-p="4" data-hasta="4">Lo que nos dice</span><span data-p="5">Su público en una frase</span></div>
+  <div class="panel a a-blur" style="--top:420px" data-p="0" data-hasta="0"><p class="grande kin" style="--d:.7s">Quién va a ver monólogos, dónde vive su plan y qué nos dicen los datos de Bogotá.</p></div>
+  <div class="panel a a-blur" style="--top:420px" data-p="1" data-hasta="1">
+    <div class="q-pict"><div class="pictos" data-pictos="51"></div><p>De cada 100 que van a teatro: <b>51 mujeres</b> y <b>49 hombres</b></p></div>
+    <div class="q-datos"><div class="num-xl"><span data-cuenta="25">25</span>–<span data-cuenta="35">35</span><small>años</small></div>
+      <ul><li>Profesionales, muchos recién salidos de la oficina</li><li>Clase media: estratos 3 y 4, algo de 5</li><li>Ganan de 3 a 4 salarios mínimos</li></ul></div>
+  </div>
+  <div class="panel a a-blur" style="--top:420px" data-p="2" data-hasta="2">
+    <div class="mapa">
+      <svg viewBox="0 0 720 600" aria-hidden="true"><path class="via" d="M-40 470C160 420 300 300 760 250"/><circle class="radio" cx="360" cy="300" r="270"/><circle class="radio2" cx="360" cy="300" r="140"/><circle class="pin" cx="360" cy="300" r="16"/><text class="lbl" x="380" y="292">LA SALA</text><text class="lbl" x="560" y="560">RADIO DE 700 m</text></svg>
+      <div class="burb" style="left:360px;top:70px"><svg class="ic"><use href="#i-cubiertos"/></svg><b data-cuenta="114">114</b><span>restaurantes</span></div>
+      <div class="burb" style="left:600px;top:190px"><svg class="ic"><use href="#i-taza"/></svg><b data-cuenta="54">54</b><span>cafés</span></div>
+      <div class="burb" style="left:600px;top:420px"><svg class="ic"><use href="#i-copa"/></svg><b data-cuenta="32">32</b><span>bares</span></div>
+      <div class="burb" style="left:360px;top:520px"><svg class="ic"><use href="#i-libro"/></svg><b data-cuenta="16">16</b><span>librerías</span></div>
+      <div class="burb" style="left:120px;top:420px"><svg class="ic"><use href="#i-mascara"/></svg><b data-cuenta="5">5</b><span>teatros</span></div>
+      <div class="burb" style="left:120px;top:190px"><svg class="ic"><use href="#i-birrete"/></svg><b data-cuenta="15">15</b><span>sedes de educación superior</span></div>
     </div>
-    <div class="col">
-      <div class="tarj cita a a-der" style="--d:.45s">
-        <div class="et">Objetivo de comunicación</div>
-        <p class="serif">«Evidenciar que Relatos Intensos es el show de monólogos <mark>mejor valorado</mark> por asistentes y conocedores del teatro: una alternativa <mark>imperdible</mark> en la escena cultural de Bogotá para 2027».</p>
-      </div>
-      <div class="trio a a-sube" style="--d:.6s">
-        <div><div class="et">El producto</div><p>Relatos Intensos, formato monólogo. La campaña sale en <b>febrero de 2027</b>.</p></div>
-        <div><div class="et">Lo que los hace distintos</div><p>Cada historia la concibe, la escribe y la actúa <b>la misma persona</b>.</p></div>
-        <div><div class="et">A quién le hablamos</div><p>Hombres y mujeres de <b>25 a 35 años</b>, inquietos, con recursos, que buscan planes íntimos lejos de lo masivo.</p></div>
-      </div>
-      <div class="obl a a-sube" style="--d:.75s"><div class="et">Tres pilares que deben quedar muy claros</div><div data-pilares></div></div>
+    <div class="mapa-txt"><span class="et r">El Park Way</span><p>Casas adaptadas con cafés, librerías, bares y teatros sobre un separador arborizado.</p><p>Negocios de dueños independientes y de precio medio: ninguna marca de lujo.</p><p>Antes o después de la función, la gente come o toma algo en la zona.</p></div>
+  </div>
+  <div class="panel a a-blur" style="--top:420px" data-p="3" data-hasta="3">
+    <div class="medidores">
+      <div class="med"><b><span data-cuenta="5.8" data-dec="1">5,8</span><i>%</i></b><div><p>de los bogotanos pagó por teatro, danza o circo en el último año: un nicho que sí paga</p><div class="barra"><i style="--v:5.8%"></i></div></div></div>
+      <div class="med"><b><span data-cuenta="30.4" data-dec="1">30,4</span><i>%</i></b><div><p>va a un plan cultural para divertirse: es la primera razón</p><div class="barra"><i style="--v:30.4%;--c:var(--amarillo)"></i></div></div></div>
+      <div class="med"><b><span data-cuenta="37.1" data-dec="1">37,1</span><i>%</i></b><div><p>no va por falta de tiempo; el dinero frena mucho menos: 7,1 %</p><div class="barra"><i style="--v:37.1%;--c:var(--azul)"></i></div><div class="barra"><i style="--v:7.1%;--c:var(--gris)"></i></div></div></div>
+      <div class="med"><b>2–3<i>%</i></b><div><p>de un salario mínimo cuesta una boleta ($35.000 a $50.000)</p></div></div>
     </div>
+    <p class="fuente">Fuentes: Encuesta Bienal de Culturas 2025 (cálculos propios), Tickean 2026, Kiosko Teatral 2024, Decreto 1469 de 2025.</p>
+  </div>
+  <div class="panel caja-negra a a-blur" style="--top:420px" data-p="4" data-hasta="4">
+    <div class="dice"><span class="et">Lo que nos dice</span><ol>
+      <li><i>1</i><span>Es <b>clase media</b> que estudia o trabaja cerca y busca <b>un plan completo a precio medio</b>, no lujo.</span></li>
+      <li><i>2</i><span>Viene por <b>la función y la cercanía con el actor</b>, no por la comodidad.</span></li>
+      <li><i>3</i><span>Es joven-adulto y viene a <b>pasarla bien, participar y conversar</b>.</span></li>
+      <li><i>4</i><span>Lo mueve <b>lo personal</b>: el post con más reacciones fue el más personal (167 «me gusta»).</span></li>
+      <li><i>5</i><span><b>Hombres y mujeres por igual</b>, un nicho que <b>sí paga</b>; su gran freno es <b>el tiempo</b>.</span></li></ol></div>
+  </div>
+  <div class="panel a a-blur" style="--top:400px" data-p="5">
+    <div class="frase-xl"><span class="et">Su público, en una frase</span><p class="kin" style="--d:.3s">Profesionales de 25 a 35 años, de clase media, que salen del trabajo buscando un plan distinto: <mark>una función y algo para comer o tomar en el Park Way.</mark></p><small>Hombres y mujeres por igual · 3 a 4 salarios mínimos · no son expertos en teatro</small></div>
   </div>
 </section>
 
-<!-- 2 · FUIMOS AL TEATRO -->
-<section class="lam" data-cap="1" data-titulo="Fuimos al teatro">
-  <div class="enc"><div class="rotulo izq">02 · LA OBSERVACIÓN</div><h2><span class="titulo b">Fuimos al teatro</span></h2></div>
-  <div class="zona g-teatro">
-    <figure class="foto-afiche a a-pop"><img src="assets/img/afiche-dia2.webp" alt="Afiche real de la función del 13 de noviembre"><figcaption>13 de nov · 8:00 p. m. · Teatro Cofal</figcaption></figure>
-    <div class="monos">
-      <div class="et a a-sube">Cuatro monólogos, cuatro temas de los que casi nadie habla</div>
-      <div class="mono a a-izq" style="--c:var(--amarillo);--d:.15s"><i class="arq"></i><div><h4>¿Me devuelves la llamada cuando puedas?</h4><span class="por">Samantha Agudelo</span><p>La maternidad que no se planeó y el embarazo que se pierde.</p></div><span class="chip" style="--c:var(--rojo)">Amor</span></div>
-      <div class="mono a a-izq" style="--c:var(--rojo);--d:.3s"><i class="arq"></i><div><h4>Estoy cansado</h4><span class="por">Nicolás Revi</span><p>El cansancio de fingir en las aplicaciones de citas y buscar afecto por inercia.</p></div><span class="chip" style="--c:var(--azul)">Cordura</span></div>
-      <div class="mono a a-izq" style="--c:var(--azul);--d:.45s"><i class="arq"></i><div><h4>Manual para superar la muerte de tu madre</h4><span class="por">Mayra Alejandra Frade</span><p>El duelo que no cabe en un manual de productividad.</p></div><span class="chip" style="--c:var(--amarillo);color:#111">Rebelión</span></div>
-      <div class="mono a a-izq" style="--c:var(--amarillo);--d:.6s"><i class="arq"></i><div><h4>Las tijeras de mayo</h4><span class="por">María Rivero</span><p>La violencia que una víctima carga en silencio.</p></div><span class="chip" style="--c:var(--amarillo);color:#111">Rebelión</span></div>
-    </div>
-    <div class="tarj sala a a-der" style="--d:.5s">
-      <div class="et">Lo que vimos en la sala</div>
-      <ul class="lista">
-        <li>Sala pequeña y <b>llena</b>.</li>
-        <li>Gente de 25 a 35 años que llegaba <b>de la oficina</b>, de nivel medio-alto y alto.</li>
-        <li>Aire bohemio y libre, muy del <b>Parkway</b>: no siguen todas las reglas, pero tampoco son rebeldes.</li>
-        <li>Entendían el humor: <b>se reían</b> y al minuto estaban <b>en silencio</b>.</li>
-        <li>Al final se quedaron para la foto y <b>para conversar</b>.</li>
-      </ul>
-    </div>
-    <div class="hallazgo a a-sube" data-p="1"><span class="et">El hallazgo</span><p>Las cuatro historias son <b>confesiones</b>. Empiezan con humor, terminan en un golpe y dicen en voz alta <mark>lo que normalmente se calla</mark>.</p></div>
+<!-- 1b · EMOCIONES Y SENTIMIENTOS -->
+<section class="lam oscura" id="noche" data-titulo="1b · Emociones y sentimientos" data-tapa="1" data-sub="2" data-rot="1b" data-tono="oscuro">
+  <header class="enc"><div class="rot"></div><h2 class="tit largo kin">Emociones y sentimientos que pueden emerger en este tipo de experiencias</h2></header>
+  <svg class="curva" viewBox="0 0 1728 300" aria-hidden="true">
+    <path class="guia" d="M0 250H1728"/>
+    <path class="seg dib" data-p="1" pathLength="1" d="M0 230C70 230 70 215 140 215"/>
+    <path class="seg dib" data-p="2" pathLength="1" d="M140 215C285 215 285 150 430 150"/>
+    <path class="seg dib" data-p="3" pathLength="1" d="M430 150C575 150 575 50 720 50"/>
+    <path class="seg dib" data-p="4" pathLength="1" d="M720 50C865 50 865 240 1010 240"/>
+    <path class="seg dib" data-p="5" pathLength="1" d="M1010 240C1155 240 1155 160 1300 160"/>
+    <path class="seg dib" data-p="6" pathLength="1" d="M1300 160C1440 160 1440 30 1580 30C1650 30 1690 28 1728 26"/>
+    <g class="nodo" data-p="1"><circle cx="140" cy="215" r="15"/><text x="140" y="290">Antes</text></g>
+    <g class="nodo" data-p="2"><circle cx="430" cy="150" r="15"/><text x="430" y="290">Al empezar</text></g>
+    <g class="nodo" data-p="3"><circle cx="720" cy="50" r="15"/><text x="720" y="290">Entiende</text></g>
+    <g class="nodo" data-p="4"><circle cx="1010" cy="240" r="15"/><text x="1010" y="290">El giro</text></g>
+    <g class="nodo" data-p="5"><circle cx="1300" cy="160" r="15"/><text x="1300" y="290">Lo incómodo</text></g>
+    <g class="nodo" data-p="6"><circle cx="1580" cy="30" r="15"/><text x="1580" y="290">Al final</text></g>
+  </svg>
+  <div class="panel momento a a-blur" data-p="0" data-hasta="0"><span class="et">Lo que vimos en la sala el 13 de noviembre</span><p class="kin" style="--d:.6s">La emoción es lo primero que llega; el sentimiento es lo que queda. Así se mueve una noche de monólogos:</p></div>
+  <div class="panel momento a a-blur" data-p="1" data-hasta="1"><span class="et">1 · Antes de entrar</span><h3>Duda y curiosidad</h3><p>«¿Será aburrido?»</p></div>
+  <div class="panel momento a a-blur" data-p="2" data-hasta="2"><span class="et">2 · Los primeros minutos</span><h3>Sorpresa y algo de confusión</h3><p>Se vuelven intriga.</p><p>En «¿Me devuelves la llamada cuando puedas?», al principio la gente se confundió.</p></div>
+  <div class="panel momento a a-blur" data-p="3" data-hasta="3"><span class="et">3 · Cuando entiende de qué va</span><h3>La risa y la complicidad</h3><p>En «Estoy cansado» se rieron con las interrupciones del casting.</p></div>
+  <div class="panel momento a a-blur" data-p="4" data-hasta="4"><span class="et">4 · Cuando la historia gira</span><h3>Tristeza, miedo o rabia</h3><p>Se vuelven identificación y empatía.</p><p>Con «Manual para superar la muerte de tu madre» pensaron en alguien que perdieron.</p></div>
+  <div class="panel momento a a-blur" data-p="5" data-hasta="5"><span class="et">5 · En los momentos incómodos</span><h3>Una tensión que la mantiene atenta</h3><p>En «Las tijeras de mayo» recordaron la historia del país y se incomodaron.</p></div>
+  <div class="panel momento a a-blur" data-p="6" data-hasta="6"><span class="et">6 · Al final</span><h3>Alegría y ganas de contarlo</h3><p>Satisfacción y admiración por los artistas. Salen conversando.</p></div>
+  <div class="panel momento a a-blur" data-p="7"><span class="et">Lo que nos dice</span><p class="grande kin" style="margin-top:14px">Pasa por todo en una sola noche: se ríe, se conmueve, se incomoda y aprende. Lo que más valora es <mark>salir con algo que contar</mark>.</p></div>
+</section>
+
+<!-- 1c · CONFLICTOS Y NECESIDADES -->
+<section class="lam" id="frenos" data-titulo="1c · Conflictos y necesidades" data-tapa="1" data-sub="3" data-rot="1c">
+  <header class="enc"><div class="rot"></div><h2 class="tit largo kin">Posibles conflictos y necesidades de este perfil</h2></header>
+  <div class="par-cab a a-sube" style="--d:.5s"><span class="et r">Lo que los frena</span><span class="et" style="color:var(--azul)">Lo que necesitan</span></div>
+  <div class="pares">
+    <div class="par" data-p="1"><div class="pa-i"><b>El cansancio y el tiempo</b><span><em>Salen tarde y el sofá compite.</em></span></div><div class="pa-c"><i></i><span><svg class="ic"><use href="#i-sofa"/></svg></span><i></i></div><div class="pa-d"><b>Un plan fácil</b><span><em>Cerca, a las 8 p. m. y con boletas en línea.</em></span></div></div>
+    <div class="par" data-p="2"><div class="pa-i"><b>«El teatro es para entendidos»</b><span><em>Creen que hay que saber del tema.</em></span></div><div class="pa-c"><i></i><span><svg class="ic"><use href="#i-pregunta"/></svg></span><i></i></div><div class="pa-d"><b>Saber rápido qué van a ver</b><span><em>Y que es entretenido.</em></span></div></div>
+    <div class="par" data-p="3"><div class="pa-i"><b>La rutina</b><span><em>Siempre los mismos planes.</em></span></div><div class="pa-c"><i></i><span><svg class="ic"><use href="#i-ciclo"/></svg></span><i></i></div><div class="pa-d"><b>Algo distinto</b><span><em>Que valga la pena contar.</em></span></div></div>
+    <div class="par" data-p="4"><div class="pa-i"><b>El precio</b><span><em>Frente a una comida o un concierto.</em></span></div><div class="pa-c"><i></i><span><svg class="ic"><use href="#i-moneda"/></svg></span><i></i></div><div class="pa-d"><b>Que valga la pena</b><span><em>Reírse, conmoverse y aprender en una noche.</em></span></div></div>
+    <div class="par" data-p="5"><div class="pa-i"><b>Coordinar al grupo</b><span><em>Armar la noche cuesta.</em></span></div><div class="pa-c"><i></i><span><svg class="ic"><use href="#i-grupo"/></svg></span><i></i></div><div class="pa-d"><b>Un plan completo</b><span><em>Función y algo para comer o tomar.</em></span></div></div>
+    <div class="par" data-p="6"><div class="pa-i"><b>Que la sala se llene</b><span><em>Antes de comprar.</em></span></div><div class="pa-c"><i></i><span><svg class="ic"><use href="#i-silla"/></svg></span><i></i></div><div class="pa-d"><b>Comprar con tiempo</b><span><em>Para asegurar el puesto.</em></span></div></div>
+  </div>
+  <div class="concl a a-mask" data-p="7"><span class="et">Lo que nos dice</span><p>Si el plan es <b>claro, fácil y completo</b>, y promete algo <b>distinto</b>, le gana al cansancio y a la rutina.</p></div>
+</section>
+
+<!-- CIERRE DEL PUNTO 1 · NATALIA -->
+<section class="lam oscura" id="natalia" data-titulo="Cierre del punto 1 · Natalia" data-tapa="1" data-sub="4" data-rot="Cierre del punto 1" data-tono="oscuro">
+  <div class="n-bloque a a-izq" style="--d:.2s"></div>
+  <div class="n-foto a a-arco"><img src="assets/kv/buyer-persona.jpg" alt="Natalia, el buyer persona"></div>
+  <img class="n-lirio a a-pop" style="--d:.9s" src="assets/collage/lirio-amarillo.webp" alt="">
+  <div class="n-tira rasgado a a-izq" style="--d:.6s"><span class="disp">Natalia, 29</span></div>
+  <header class="enc n-enc"><div class="rot"></div><h2 class="tit kin">Natalia, nuestro buyer persona</h2><p class="intro">Todo el punto 1 en una sola persona, contado como su historia.</p></header>
+  <div class="escena-n a a-blur" data-p="0" data-hasta="0"><span class="et"><i>1 / 7</i>Ella es Natalia</span><p>Tiene <mark>29 años</mark>, vive en el noroccidente de Bogotá y trabaja en una oficina en el centro-norte. Gana unos <mark>tres salarios mínimos</mark> y prefiere <mark>gastar en planes antes que en cosas</mark>.</p></div>
+  <div class="escena-n a a-blur" data-p="1" data-hasta="1"><span class="et"><i>2 / 7</i>Entre semana</span><p>Su vida es <mark>reuniones, pantalla y trancón</mark>. Cuando tiene una noche libre quiere salir… <mark>pero no al bar ni al cine de siempre</mark>.</p></div>
+  <div class="escena-n a a-blur" data-p="2" data-hasta="2"><span class="et"><i>3 / 7</i>Su lugar</span><p>Le gusta el <mark>Park Way</mark>: le queda cerca del trabajo y tiene dónde comer, tomar algo y algo distinto para ver. <mark>No es experta en teatro</mark> ni le interesa parecerlo.</p></div>
+  <div class="escena-n a a-blur" data-p="3" data-hasta="3"><span class="et"><i>4 / 7</i>Antes de comprar</span><p>Se entera por <mark>historias de Instagram</mark> y por el <mark>voz a voz</mark>. Y se pregunta:</p><div class="preg3 kin" style="--d:.5s"><b>¿Qué voy a ver?</b><b>¿Me voy a divertir?</b><b>¿Vale lo que cuesta?</b></div></div>
+  <div class="escena-n a a-blur" data-p="4" data-hasta="4"><span class="et"><i>5 / 7</i>En la función</span><ol class="ruta-n"><li><i></i>Entra con curiosidad y algo de duda</li><li><i></i>Se ríe y se siente cómplice</li><li><i></i>En el giro, silencio: piensa en alguien</li><li><i></i>Sale satisfecha, admirando a los artistas</li></ol></div>
+  <div class="escena-n a a-blur" data-p="5" data-hasta="5"><span class="et"><i>6 / 7</i>Lo que la frena y lo que necesita</span><div class="dos-col"><ul><li>El cansancio: gana el sofá</li><li>«El teatro es para entendidos»</li><li>El precio</li></ul><ul><li>Saber rápido qué va a ver</li><li>Un plan fácil y completo</li><li>Salir con algo que contar</li></ul></div></div>
+  <div class="escena-n cita-n a a-blur" data-p="6"><span class="et"><i>7 / 7</i>Por qué ella</span><p class="kin" style="margin-top:24px;--d:.4s">Natalia no existe, pero es la cara de la mayoría del público: <mark>el que viene, recomienda el show y vuelve.</mark></p></div>
+</section>
+
+<!-- ============ TAPA 2 ============ -->
+<section class="lam tapa" id="tapa-2" data-titulo="2 · Insight" data-tapa="2" data-sub="0" data-tono="oscuro" style="--fondo:var(--azul);--arco:var(--crema);--num:var(--azul);--txt:var(--crema)">
+  <div class="t-arco a a-arco"><span class="t-num disp">2</span></div>
+  <img class="t-lirio a a-pop" style="--d:.9s" src="assets/collage/lirio-rojo.webp" alt="">
+  <div class="t-txt">
+    <div class="et a a-sube" style="--d:.3s">Punto 2 del caso</div>
+    <h2 class="t-tit disp kin" style="--d:.35s">Insight</h2>
+    <p class="t-pide a a-sube" style="--d:.65s">Un insight poderoso, con el método de clase: «¿si ha visto cuando…?», «¿qué pasaría si…?», emociones, miedos e insights.</p>
+    <ol class="t-lista">
+      <li class="a a-sube" style="--d:.85s"><b>2.1</b>¿Si ha visto cuando…? ↔ ¿Qué pasaría si…?</li>
+      <li class="a a-sube" style="--d:.95s"><b>2.2</b>Emociones y miedos</li>
+      <li class="a a-sube" style="--d:1.05s"><b>2.3</b>De 11 insights, el principal</li>
+      <li class="a a-sube" style="--d:1.15s"><b>2.4</b>Por qué es el principal</li>
+    </ol>
   </div>
 </section>
 
-<!-- 3 · BUYER PERSONA: PERFIL -->
-<section class="lam" data-cap="2" data-titulo="Buyer persona: el perfil">
-  <div class="enc"><div class="rotulo izq">03 · BUYER PERSONA · A) EL PERFIL</div><h2><span class="titulo b">Laura, 29 años</span> <span class="mano sub-mano c-azul">«la que siempre está bien»</span></h2></div>
-  <div class="zona g-persona">
-    <div class="per-col"><div data-kv="laura" data-s="0.82"></div></div>
-    <div class="per-der">
-      <div class="ficha">
-        <div class="a a-sube"><div class="et">Quién es</div><p>Profesional con posgrado en curso. Trabaja en una oficina: marca, diseño o tecnología.</p></div>
-        <div class="a a-sube" style="--d:.1s"><div class="et">Dónde vive</div><p>En Teusaquillo o Chapinero, sola o con su pareja. Nivel medio-alto.</p></div>
-        <div class="a a-sube" style="--d:.2s"><div class="et">Qué le gusta</div><p>Una copa en el Parkway, cine de autor, librerías y pódcast largos. Va a terapia.</p></div>
-        <div class="a a-sube" style="--d:.3s"><div class="et">Cómo se entera</div><p>Por las historias de Instagram de sus amigos. Decide en el grupo de WhatsApp y compra en línea.</p></div>
-        <div class="a a-sube" style="--d:.4s"><div class="et">Cómo es</div><p>Curiosa y crítica. Desconfía de lo masivo. Se ríe de lo que duele.</p></div>
-        <div class="a a-sube" style="--d:.5s"><div class="et">Qué la mueve</div><p>Descubrir algo antes que los demás… y contarlo.</p></div>
-      </div>
-      <div class="frase a a-pop" style="--d:.7s"><span class="tira f" style="--rot:-1.2deg">«No quiero otro plan para subir a historias. Quiero uno que me mueva algo».</span></div>
-      <div class="jueves" data-p="1">
-        <div class="et">Un jueves de Laura</div>
-        <div class="ruta">
-          <div class="a a-sube" data-p="1"><b>6:00 p. m.</b><span>Sale de la oficina</span></div>
-          <div class="a a-sube" data-p="1" style="--d:.15s"><b>7:00 p. m.</b><span>Una copa en el Parkway</span></div>
-          <div class="a a-sube" data-p="1" style="--d:.3s"><b>8:00 p. m.</b><span>Función en sala pequeña</span></div>
-          <div class="a a-sube" data-p="1" style="--d:.45s"><b>9:30 p. m.</b><span>Se queda hablando en la puerta</span></div>
-        </div>
-      </div>
-    </div>
+<!-- 2.1 · SI HA VISTO CUANDO ↔ QUÉ PASARÍA SI -->
+<section class="lam" id="observar" data-titulo="¿Si ha visto cuando…? ↔ ¿Qué pasaría si…?" data-tapa="2" data-sub="1">
+  <header class="enc"><div class="rot"></div><h2 class="tit kin">¿Si ha visto cuando…? ↔ ¿Qué pasaría si…?</h2><p class="intro">Del punto 1 salen 8 situaciones; cada «qué pasaría si» responde a la del mismo número.</p></header>
+  <div class="riel a a-sube" style="--d:.5s"><span data-p="1">1</span><span data-p="2">2</span><span class="pista" data-p="3">3</span><span data-p="4">4</span><span class="pista" data-p="5">5</span><span data-p="6">6</span><span data-p="7">7</span><span class="pista" data-p="8">8</span><em data-p="9">Las pistas más fuertes: 3, 5 y 8</em></div>
+  <div class="panel par-sv a a-blur" data-p="1" data-hasta="1"><div class="sv-l"><span class="et">¿Si ha visto cuando alguien…</span><p>…sale de una obra aplaudiendo con cara de experta y, ya en la calle, le pregunta en voz baja a la amiga «¿y tú sí entendiste?»?</p></div><div class="sv-c"><b>1</b></div><div class="sv-r"><span class="et">¿Qué pasaría si…</span><p>…la marca le recordara que ya es experta en monólogos: se ha aguantado el de su ex, el del amigo y el del jefe, y los entendió todos?</p></div></div>
+  <div class="panel par-sv a a-blur" data-p="2" data-hasta="2"><div class="sv-l"><span class="et">¿Si ha visto cuando alguien…</span><p>…para ir a cine solo pregunta «¿a qué hora?», pero para ir a teatro pregunta «¿de qué se trata?, ¿es chistosa?, ¿sí vale la pena?»?</p></div><div class="sv-c"><b>2</b></div><div class="sv-r"><span class="et">¿Qué pasaría si…</span><p>…en vez de una sinopsis, la marca le respondiera sus tres preguntas en una sola frase: «Es como cuando un amigo te cuenta su tusa… pero chistoso y sí vale la pena»?</p></div></div>
+  <div class="panel par-sv a a-blur" data-p="3" data-hasta="3"><div class="sv-l"><span class="et">¿Si ha visto cuando alguien…</span><p>…pregunta «¿qué hacemos hoy?» y, después de mil propuestas, terminan otra vez en el bar de siempre, oyendo al amigo borracho hablar de su ex?</p></div><div class="sv-c"><b>3</b></div><div class="sv-r"><span class="et">¿Qué pasaría si…</span><p>…justo cuando el amigo arranca otra vez con su ex, la marca le diera al grupo una salida: una noche en la que el monólogo sí lo escogen ellos?</p></div></div>
+  <div class="panel par-sv a a-blur" data-p="4" data-hasta="4"><div class="sv-l"><span class="et">¿Si ha visto cuando alguien…</span><p>…le responde una historia de Instagram a un amigo con un «¿y eso dónde es? ¡Lléveme la próxima!»?</p></div><div class="sv-c"><b>4</b></div><div class="sv-r"><span class="et">¿Qué pasaría si…</span><p>…en cada función dejáramos una silla vacía con un letrero, «Reservada para el que siempre dice "lléveme la próxima"», y la publicáramos en Instagram?</p></div></div>
+  <div class="panel par-sv a a-blur" data-p="5" data-hasta="5"><div class="sv-l"><span class="et">¿Si ha visto cuando alguien…</span><p>…se oye completo el audio de 10 minutos del amigo que no supera a su ex, pero dice que un monólogo le da pereza?</p></div><div class="sv-c"><b>5</b></div><div class="sv-r"><span class="et">¿Qué pasaría si…</span><p>…le mostráramos a todo el mundo ese audio de 10 minutos que ni en 2x se acaba?</p></div></div>
+  <div class="panel par-sv a a-blur" data-p="6" data-hasta="6"><div class="sv-l"><span class="et">¿Si ha visto cuando alguien…</span><p>…sale de la función diciendo «ese monólogo era mi ex con otro nombre» y al otro día se lo cuenta a todo el mundo en la oficina?</p></div><div class="sv-c"><b>6</b></div><div class="sv-r"><span class="et">¿Qué pasaría si…</span><p>…cada pieza cerrara invitando a mandar a un número de WhatsApp una nota de voz con su propio monólogo, y las mejores historias inspiraran la siguiente temporada?</p></div></div>
+  <div class="panel par-sv a a-blur" data-p="7" data-hasta="7"><div class="sv-l"><span class="et">¿Si ha visto cuando alguien…</span><p>…en plena función, se ríe a carcajadas y un segundo después se queda callada porque la historia le recordó a su ex?</p></div><div class="sv-c"><b>7</b></div><div class="sv-r"><span class="et">¿Qué pasaría si…</span><p>…mostráramos ese segundo exacto en el que la risa se corta porque la historia del artista se parece a la de uno?</p></div></div>
+  <div class="panel par-sv a a-blur" data-p="8" data-hasta="8"><div class="sv-l"><span class="et">¿Si ha visto cuando alguien…</span><p>…sale de la oficina jurando «hoy sí salgo» y a las 8 de la noche ya está en pijama, con el celular en la oreja, oyendo a su ex, que no para de hablar?</p></div><div class="sv-c"><b>8</b></div><div class="sv-r"><span class="et">¿Qué pasaría si…</span><p>…le pusiéramos un contador a esa llamada, para que viera cuántas horas de monólogo se aguantó gratis?</p></div></div>
+  <div class="panel pistas a a-blur" data-p="9">
+    <div class="pista-f"><b>3</b><p>…después de mil propuestas terminan otra vez en el bar de siempre, oyendo al amigo borracho hablar de su ex.</p><p>…la marca le diera al grupo una salida: una noche en la que el monólogo sí lo escogen ellos.</p></div>
+    <div class="pista-f"><b>5</b><p>…se oye completo el audio de 10 minutos del amigo que no supera a su ex, pero un monólogo le da pereza.</p><p>…le mostráramos a todo el mundo ese audio de 10 minutos que ni en 2x se acaba.</p></div>
+    <div class="pista-f"><b>8</b><p>…a las 8 de la noche ya está en pijama, con el celular en la oreja, oyendo a su ex, que no para de hablar.</p><p>…le pusiéramos un contador a esa llamada, para que viera cuántas horas de monólogo se aguantó gratis.</p></div>
   </div>
 </section>
 
-<!-- 4 · BUYER PERSONA: EMOCIONES, CONFLICTOS, NECESIDADES -->
-<section class="lam" data-cap="2" data-titulo="Buyer persona: lo que siente y lo que le falta">
-  <div class="enc"><div class="rotulo izq">03 · BUYER PERSONA · B) Y C)</div><h2><span class="titulo b">Lo que siente y lo que le falta</span></h2></div>
-  <div class="zona g-siente">
-    <div class="col">
-      <div class="et grande a a-sube">b) Emociones que aparecen en la función</div>
-      <div class="emos">
-        <div class="emo a a-izq" style="--c:var(--amarillo)"><i></i><b>Sorpresa</b><span>el giro que nadie veía venir</span></div>
-        <div class="emo a a-izq" style="--c:var(--amarillo);--d:.08s"><i></i><b>Alegría</b><span>la risa cómplice, y la nerviosa</span></div>
-        <div class="emo a a-izq" style="--c:var(--azul);--d:.16s"><i></i><b>Tristeza</b><span>el nudo en la garganta</span></div>
-        <div class="emo a a-izq" style="--c:var(--azul);--d:.24s"><i></i><b>Miedo</b><span>la tensión de un interrogatorio</span></div>
-        <div class="emo a a-izq" style="--c:var(--rojo);--d:.32s"><i></i><b>Ira</b><span>la injusticia que se cuenta</span></div>
-        <div class="emo a a-izq" style="--c:var(--rojo);--d:.4s"><i></i><b>Desagrado</b><span>lo crudo, dicho sin filtro</span></div>
-      </div>
-      <div class="et grande a a-sube" style="--d:.5s">Y los sentimientos que se quedan</div>
-      <div class="sentires a a-sube" style="--d:.6s"><span>identificación</span><span>admiración</span><span>alivio</span><span>afecto</span><span>ganas de hablar</span></div>
-    </div>
-    <div class="col">
-      <div class="et grande a a-sube" data-p="1">c) Sus conflictos</div>
-      <div class="conf">
-        <span class="tira f a a-tira" data-p="1" style="--rot:-1deg">Habla todo el día, pero lo importante no lo dice.</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:.8deg;--d:.12s">Aparenta estar bien y está cansada de fingir.</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:-.6deg;--d:.24s">Quiere planes distintos y termina en lo mismo.</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:1deg;--d:.36s">Cree que el teatro es para entendidos y que «monólogo» es stand-up.</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:-.8deg;--d:.48s">Le cuesta convencer a sus amigos sin una razón corta.</span>
-      </div>
-      <div class="et grande a a-sube" data-p="2">c) Sus necesidades</div>
-      <div class="neces">
-        <div class="tarj a a-sube" data-p="2"><div class="et">Funcional</div><p>Un plan entre semana, cerca, corto, fácil de comprar y que valga la plata.</p></div>
-        <div class="tarj real a a-pop" data-p="2" style="--d:.2s"><div class="et">La real</div><p class="titulo centro">Permiso para hablar</p><p>Sentir algo de verdad y oír a alguien decir lo que ella calla.</p></div>
-        <div class="tarj a a-sube" data-p="2" style="--d:.1s"><div class="et">Social</div><p>Tener de qué conversar después y descubrir talento antes que el resto.</p></div>
-      </div>
-    </div>
+<!-- 2.2 · EMOCIONES Y MIEDOS -->
+<section class="lam oscura" id="emociones" data-titulo="Emociones y miedos" data-tapa="2" data-sub="2" data-tono="oscuro">
+  <header class="enc"><div class="rot"></div><h2 class="tit kin">Emociones y miedos</h2><p class="intro">Qué siente Natalia en la función y qué le preocupa cuando piensa en ir.</p></header>
+  <div class="panel emos a" data-p="0" data-hasta="4">
+    <div class="emo a a-pop" data-p="1" style="--c:var(--amarillo);--ct:var(--tinta)"><div class="emo-cab"><svg class="ic"><use href="#i-risa"/></svg><b class="disp">Alegría</b><small>Punto 1</small></div><p>Carcajadas en los cuatro monólogos. Es lo que sale a buscar.</p></div>
+    <div class="emo a a-pop" data-p="2" style="--c:var(--rojo);--ct:var(--crema)"><div class="emo-cab"><svg class="ic"><use href="#i-sorpresa"/></svg><b class="disp">Sorpresa</b><small>La más útil</small></div><p>Giros que nadie esperaba: lo contrario de la rutina.</p></div>
+    <div class="emo a a-pop" data-p="3" style="--c:var(--azul);--ct:var(--crema)"><div class="emo-cab"><svg class="ic"><use href="#i-triste"/></svg><b class="disp">Tristeza</b><small>Punto 1</small></div><p>La risa se cortó de golpe: el show hace reír y conmueve.</p></div>
+    <div class="emo a a-pop" data-p="4" style="--c:var(--oliva);--ct:var(--crema)"><div class="emo-cab"><svg class="ic"><use href="#i-asco"/></svg><b class="disp">Desagrado</b><small>Nueva</small></div><p>El «uy, no»… ante la palabra «monólogo», no ante la obra.</p></div>
+  </div>
+  <div class="panel mies a" data-p="5" data-hasta="5">
+    <div class="mie a a-sube" data-p="5" style="--d:.05s"><span class="mie-ic"><svg class="ic"><use href="#i-arena"/></svg></span><b>Aburrirse</b></div>
+    <div class="mie a a-sube" data-p="5" style="--d:.12s"><span class="mie-ic"><svg class="ic"><use href="#i-pregunta"/></svg></span><b>No entender (y que se note)</b></div>
+    <div class="mie a a-sube" data-p="5" style="--d:.19s"><span class="mie-ic"><svg class="ic"><use href="#i-moneda"/></svg></span><b>Que no valga lo que cuesta</b></div>
+    <div class="mie a a-sube" data-p="5" style="--d:.26s"><span class="mie-ic"><svg class="ic"><use href="#i-silla"/></svg></span><b>Quedarse sin puesto</b></div>
+    <div class="mie a a-sube" data-p="5" style="--d:.33s"><span class="mie-ic"><svg class="ic"><use href="#i-calendario"/></svg></span><b>Que todas las semanas sean iguales</b></div>
+    <div class="mie a a-sube" data-p="5" style="--d:.4s"><span class="mie-ic"><svg class="ic"><use href="#i-abajo"/></svg></span><b>Proponer el plan malo</b></div>
+    <div class="mie a a-sube" data-p="5" style="--d:.47s"><span class="mie-ic"><svg class="ic"><use href="#i-celular"/></svg></span><b>Perderse lo que otros viven</b></div>
+    <div class="mie a a-sube" data-p="5" style="--d:.54s"><span class="mie-ic"><svg class="ic"><use href="#i-foco"/></svg></span><b>Quedar expuesta</b></div>
+  </div>
+  <div class="panel a a-blur" data-p="6" style="--top:430px"><span class="et r">En el fondo</span><p class="grande kin" style="margin-top:20px">Natalia quiere <mark>sentir de verdad, pero sin quedar expuesta</mark>.</p><p class="media" style="margin-top:30px">Antes de ir la frena el desagrado, y no por la obra: por la palabra «monólogo».</p></div>
+</section>
+
+<!-- 2.3 · INSIGHTS -->
+<section class="lam oscura" id="insights" data-titulo="De 11 insights, el principal" data-tapa="2" data-sub="3" data-tono="oscuro">
+  <header class="enc"><div class="rot"></div><h2 class="tit kin">De 11 insights, el principal</h2><p class="intro">Once frases en la voz de Natalia. Al mirarlas juntas, una idea se repite.</p></header>
+  <div class="ins-lista" data-p="1">
+    <div class="ins a a-izq" style="--d:.0s"><b>1</b>«Le pago al psicólogo para echarme un monólogo de una hora… y me da pereza ir a ver el de otro.»</div>
+    <div class="ins a a-izq" style="--d:.08s"><b>2</b>«Me oigo los audios de 8 minutos de mi amiga, pero un monólogo de 15 me suena eterno.»</div>
+    <div class="ins a a-izq" style="--d:.16s"><b>3</b>«El mejor monólogo que he visto lo dio mi tía en la novena.»</div>
+    <div class="ins a a-izq" style="--d:.24s"><b>4</b>«Todos los lunes me aguanto el monólogo de mi jefe… y ese sí que no tiene chiste.»</div>
+    <div class="ins ins-5 a a-izq" style="--d:.32s"><b>5</b>«Más largo que el monólogo de un ex intenso.»</div>
+    <div class="ins a a-izq" style="--d:.4s"><b>6</b>«Cuando alguien dice "no le cuente a nadie", ya tiene toda mi atención.»</div>
+    <div class="ins a a-der" style="--d:.1s"><b>7</b>«La última vez que fui a teatro fue con el colegio… y me tocó hacer resumen.»</div>
+    <div class="ins a a-der" style="--d:.18s"><b>8</b>«En el teatro no sé cuándo aplaudir, así que aplaudo cuando aplaude el de al lado.»</div>
+    <div class="ins a a-der" style="--d:.26s"><b>9</b>«En mi lista de planes, el teatro está debajo de "ordenar el clóset".»</div>
+    <div class="ins a a-der" style="--d:.34s"><b>10</b>«Al salir del trabajo tengo tres opciones: cerveza, cine o cama… y casi siempre gana la cama.»</div>
+    <div class="ins a a-der" style="--d:.42s"><b>11</b>«Me entero de los mejores planes cuando ya se acabaron, por las historias de otros.»</div>
+  </div>
+  <div class="ins-exp a a-blur" data-p="2" data-hasta="2"><p>No todas las situaciones terminan en la idea. Al mirarlas todas, lo que más se repite es <b>el monólogo que nos ha tocado aguantar</b>:</p>
+    <div class="ins-tres"><span><b>3</b>el amigo en el bar</span><span><b>5</b>el audio eterno</span><span><b>8</b>la llamada que no termina</span></div></div>
+  <div class="ins-gran a a-blur" data-p="3"><span class="et">El insight principal</span><p class="ins-frase kin" style="--d:.3s">«Más largo que el monólogo de un <em>ex intenso</em>.»</p>
+    <div class="ins-tags a a-sube" data-p="3" style="--d:1.2s"><span><b>Emoción</b>desagrado y alegría</span><span><b>Miedo</b>aburrirse</span></div></div>
+</section>
+
+<!-- 2.4 · POR QUÉ ES EL PRINCIPAL -->
+<section class="lam" id="porque" data-titulo="Por qué es el principal" data-tapa="2" data-sub="4">
+  <header class="enc"><div class="rot"></div><h2 class="tit kin">Por qué es el principal</h2><p class="intro">Seis razones para quedarnos con este insight.</p></header>
+  <div class="pq-banda a a-mask" style="--d:.4s"><span class="et">El insight</span><span class="disp-k">«Más largo que el monólogo de un ex intenso.»</span></div>
+  <div class="pq-grid">
+    <div class="pq a a-sube" data-p="1"><span class="pq-ic"><svg class="ic"><use href="#i-grupo"/></svg></span><b>Cualquiera lo ha vivido</b><span>El amigo en el bar, el audio eterno, la llamada que no termina.</span></div>
+    <div class="pq a a-sube" data-p="2"><span class="pq-ic"><svg class="ic"><use href="#i-chat"/></svg></span><b>No es solo de parejas</b><span>El «ex» le habla a la ex, a los amigos o al jefe.</span></div>
+    <div class="pq a a-sube" data-p="3"><span class="pq-ic"><svg class="ic"><use href="#i-comillas"/></svg></span><b>Suena a dicho</b><span>Sirve para cualquier cosa eterna, como un refrán.</span></div>
+    <div class="pq a a-sube" data-p="4"><span class="pq-ic"><svg class="ic"><use href="#i-risa"/></svg></span><b>Es gracioso</b><span>Nadie es más dramático que un ex intenso.</span></div>
+    <div class="pq a a-sube" data-p="5"><span class="pq-ic"><svg class="ic"><use href="#i-mascara"/></svg></span><b>Le habla a quien no va a teatro</b><span>Ya se aguantó un monólogo larguísimo.</span></div>
+    <div class="pq a a-sube" data-p="6"><span class="pq-ic"><svg class="ic"><use href="#i-arena"/></svg></span><b>Explica la pereza</b><span>Por eso «monólogo» suena a algo que se aguanta.</span></div>
+  </div>
+  <div class="reto caja-negra a a-blur" data-p="7"><span class="et" style="color:var(--amarillo)">El reto de la campaña</span><p>Darle la vuelta: <b>un monólogo que sí quiera oír hasta el final.</b></p></div>
+</section>
+
+<!-- ============ TAPA 3 ============ -->
+<section class="lam tapa" id="tapa-3" data-titulo="3 · Idea o concepto" data-tapa="3" data-sub="0" data-tono="oscuro" style="--fondo:var(--tinta);--arco:var(--amarillo);--num:var(--tinta);--txt:var(--crema)">
+  <div class="t-arco a a-arco"><span class="t-num disp">3</span></div>
+  <img class="t-lirio a a-pop" style="--d:.9s" src="assets/collage/lirio-rojo.webp" alt="">
+  <div class="t-txt">
+    <div class="et a a-sube" style="--d:.3s">Punto 3 del caso</div>
+    <h2 class="t-tit disp kin" style="--d:.35s">Idea o concepto</h2>
+    <p class="t-pide a a-sube" style="--d:.65s">Una idea con sus elementos, alineada al cliente y construida sobre el insight.</p>
+    <ol class="t-lista">
+      <li class="a a-sube" style="--d:.85s"><b>3.1</b>La técnica random</li>
+      <li class="a a-sube" style="--d:.95s"><b>3.2</b>La campaña en 3 situaciones</li>
+      <li class="a a-sube" style="--d:1.05s"><b>3.3</b>Las 5 preguntas</li>
+      <li class="a a-sube" style="--d:1.15s"><b>3.4</b>Concepto decodificado</li>
+    </ol>
   </div>
 </section>
 
-<!-- 5 · ¿SI HA VISTO CUANDO ALGUIEN…? -->
-<section class="lam" data-cap="3" data-titulo="Insight, paso 1: ¿Si ha visto cuando alguien…?">
-  <div class="enc"><div class="rotulo izq">04 · EL INSIGHT · PASO 1: OBSERVAR</div><h2><span class="titulo b">¿Si ha visto cuando alguien…</span></h2></div>
-  <div class="zona g-visto">
-    <div class="obs a a-sube"><b>1</b><p>…manda un audio de cinco minutos y remata con «bueno, ya, no era nada»?</p><span>R/. Dijo mucho para no decir lo importante.</span></div>
-    <div class="obs a a-sube" style="--d:.1s"><b>2</b><p>…ensaya en la ducha la conversación que nunca va a tener?</p><span>R/. Ese monólogo le sale perfecto. Lástima que nadie lo oye.</span></div>
-    <div class="obs a a-sube" style="--d:.2s"><b>3</b><p>…responde «todo bien» cuando no está bien?</p><span>R/. Es más fácil que explicar.</span></div>
-    <div class="obs a a-sube" style="--d:.3s"><b>4</b><p>…cambia de tema en el almuerzo familiar porque «de eso no se habla»?</p><span>R/. En toda casa hay un tema que nadie toca.</span></div>
-    <div class="obs a a-sube" data-p="1"><b>5</b><p>…le cuenta a un desconocido lo que no le cuenta a su mejor amigo?</p><span>R/. Con un extraño no hay nada que perder.</span></div>
-    <div class="obs a a-sube" data-p="1" style="--d:.1s"><b>6</b><p>…se ríe en el teatro justo en la parte más dura?</p><span>R/. Es la risa nerviosa del que se reconoció.</span></div>
-    <div class="obs a a-sube" data-p="1" style="--d:.2s"><b>7</b><p>…sale de la función y se queda una hora hablando en la puerta?</p><span>R/. Lo que oyó le soltó la lengua.</span></div>
-    <div class="patron a a-pop" data-p="2"><div class="et">El patrón</div><p>Hablamos muchísimo, pero <mark>lo que importa nos lo callamos</mark>. Y cuando alguien lo dice por nosotros, se nos suelta la lengua.</p></div>
+<!-- 3.1 · TÉCNICA RANDOM -->
+<section class="lam" id="random" data-titulo="La técnica random" data-tapa="3" data-sub="1">
+  <header class="enc"><div class="rot"></div><h2 class="tit kin">La técnica random</h2><p class="intro">Técnica de pensamiento lateral: un personaje, un elemento o una situación al azar que afecta el problema.</p></header>
+  <div class="panel rd-prob a a-blur" data-p="0" data-hasta="1"><div class="caja-negra"><span class="et">El problema</span><p class="kin" style="--d:.5s">Situaciones como las de una ruptura nos enseñaron que un monólogo es <mark>largo, incómodo y aburrido</mark>. Por eso Natalia ya no se abre a oír uno bueno.</p></div></div>
+  <div class="cadena"><span data-p="2">De dónde sale</span><span data-p="3">El personaje</span><span data-p="4">El elemento</span><span data-p="5">La situación al azar</span><span data-p="6">Cómo afecta el problema</span></div>
+  <div class="panel nodo-p a a-blur" data-p="2" data-hasta="2"><div class="vis"><div class="nums358"><b>3</b><b>5</b><b>8</b></div></div><div><h3>De dónde sale</h3><ul><li>3 · el amigo que habla de su ex en el bar</li><li>5 · el audio que no se acaba</li><li>8 · la noche con el celular en la oreja</li></ul></div></div>
+  <div class="panel nodo-p a a-blur" data-p="3" data-hasta="3"><div class="vis"><span class="cara recorte" data-recorte="andres:95,650,250,250"></span></div><div><h3>El personaje: el ex</h3><p><mark>Andrés</mark> acaba de terminar con Natalia y no se calla. No es el buyer persona: Natalia y los demás son los que lo aguantan.</p></div></div>
+  <div class="panel nodo-p a a-blur" data-p="4" data-hasta="4"><div class="vis"><div class="ics3"><span><svg class="ic"><use href="#i-telefono"/></svg></span><span><svg class="ic"><use href="#i-trago"/></svg></span><span><svg class="ic"><use href="#i-onda"/></svg></span></div></div><div><h3>El elemento, uno por situación</h3><ul><li>El celular pegado a la oreja</li><li>El trago que no se acaba</li><li>El audio que ni en 2x termina</li></ul></div></div>
+  <div class="panel nodo-p a a-blur" data-p="5" data-hasta="5"><div class="vis"><div class="chips3"><span>La llamada</span><span>La tusa con los amigos</span><span>El audio al jefe</span></div></div><div><h3>La situación al azar</h3><p>Lo que pasa después de terminar: una situación por pieza.</p></div></div>
+  <div class="panel nodo-p a a-blur" data-p="6"><div class="vis"><svg class="ic reloj-xl"><use href="#i-reloj"/></svg></div><div><h3>Cómo afecta el problema</h3><p>Son los monólogos que todos hemos aguantado, y <mark>por ellos creemos que todos los monólogos son así</mark>.</p></div></div>
+</section>
+
+<!-- 3.2 · LAS 3 SITUACIONES -->
+<section class="lam oscura" id="situaciones" data-titulo="La campaña en 3 situaciones" data-tapa="3" data-sub="2" data-tono="oscuro">
+  <header class="enc"><div class="rot"></div><h2 class="tit kin">La campaña en 3 situaciones</h2><p class="intro">Tres piezas, una por situación: el mismo protagonista, Andrés, y el mismo cierre.</p></header>
+  <div class="sits">
+    <article class="sit a a-sube" data-p="1" style="--c:var(--amarillo);--ct:var(--tinta)">
+      <div class="sit-cab"><span class="et">1 · con Natalia</span><h3 class="disp">La llamada</h3></div>
+      <div class="sit-hora"><span data-reloj="8:12|P.M."></span><svg class="ic"><use href="#i-flecha"/></svg><span data-reloj="10:59|P.M."></span></div>
+      <p class="sit-el">El celular pegado a la oreja</p>
+      <div class="globo">«Nata, vuelve, yo cambio…»</div>
+      <div class="globo resp der">¡M<span class="ast">*</span>rica, ya!<small>Que mañana madrugo.</small></div>
+    </article>
+    <article class="sit a a-sube" data-p="2" style="--c:var(--rojo);--ct:var(--crema)">
+      <div class="sit-cab"><span class="et">2 · con los amigos</span><h3 class="disp">La tusa</h3></div>
+      <div class="sit-hora"><span data-reloj="9:00|P.M."></span><svg class="ic"><use href="#i-flecha"/></svg><span data-reloj="1:00|A.M."></span></div>
+      <p class="sit-el">El trago que no se acaba</p>
+      <div class="globo">«Esperen, que esta parte es la buena…»</div>
+      <div class="globo resp der">¡M<span class="ast">*</span>rica, ya!<small>Supérela.</small></div>
+    </article>
+    <article class="sit a a-sube" data-p="3" style="--c:var(--azul);--ct:var(--crema)">
+      <div class="sit-cab"><span class="et">3 · con el jefe</span><h3 class="disp">El audio</h3></div>
+      <div class="sit-hora"><span data-reloj="32:16"></span><span class="x2">2x</span></div>
+      <p class="sit-el">El audio que ni en 2x termina</p>
+      <div class="globo">«Jefe, hoy no puedo ir… es que terminé con Natalia y…»</div>
+      <div class="globo resp der">¡M<span class="ast">*</span>rica, ya!<small>¿Y el informe?</small></div>
+    </article>
+  </div>
+  <div class="panel cierre-p a a-blur" data-p="4"><span class="et">El cierre, igual en las tres</span>
+    <div class="ci"><span class="et">Titular</span><p>«Relatos de intensos <span class="vs"><span>VS.</span></span> Relatos Intensos»</p></div>
+    <div class="ci"><span class="et">Diálogo</span><p>«¡M<span class="ast">*</span>rica, ya!» <small>con un remate distinto en cada situación</small></p></div>
+    <div class="ci"><span class="et">Concepto comercial</span><p>«Si te aguantaste el monólogo de tu ex intenso, te mereces uno que sí valga la pena.»</p></div>
+    <div class="ci"><span class="et">Llamado a la acción</span><p>«Separa tu puesto en Tickean»</p></div>
+    <div class="ci"><span class="et">Eslogan y marca</span><p>«Monólogos para reír… mientras puedas» <small>Relatos Intensos para Mentes Traviesas · Contradicción Arteatro</small></p></div>
   </div>
 </section>
 
-<!-- 6 · ¿QUÉ PASARÍA SI…? -->
-<section class="lam" data-cap="3" data-titulo="Insight, paso 2: ¿Qué pasaría si…?">
-  <div class="enc"><div class="rotulo izq">04 · EL INSIGHT · PASO 2: PROVOCAR</div><h2><span class="titulo b">¿Qué pasaría si…</span></h2></div>
-  <div class="zona g-pasaria">
-    <div class="prov a a-izq"><b>1</b><p>…dejáramos de vender «teatro» y vendiéramos lo que pasa adentro: alguien dice lo que tú callas?</p><span class="chip" style="--c:var(--rojo)">El beneficio</span></div>
-    <div class="prov a a-izq" style="--d:.1s"><b>2</b><p>…el enemigo no fuera la competencia, sino los dichos que nos enseñaron a callar?</p><span class="chip" style="--c:var(--tinta)">El villano</span></div>
-    <div class="prov a a-izq" style="--d:.2s"><b>3</b><p>…una marca que se llama Contradicción saliera a contradecir esos dichos, uno por uno?</p><span class="chip" style="--c:var(--azul)">La mecánica</span></div>
-    <div class="prov a a-izq" style="--d:.3s"><b>4</b><p>…cada pilar tuviera su propio dicho para tachar: amor, cordura y rebelión?</p><span class="chip" style="--c:var(--amarillo);color:#111">El sistema</span></div>
-    <div class="prov a a-izq" data-p="1"><b>5</b><p>…el aviso se viera como una boca tapada que alguien destapa?</p><span class="chip" style="--c:var(--rojo)">La imagen</span></div>
-    <div class="prov a a-izq" data-p="1" style="--d:.1s"><b>6</b><p>…la crítica la escribiera el público al salir, con una frase que ya usa: «alguien tenía que decirlo»?</p><span class="chip" style="--c:var(--azul)">La prueba</span></div>
-    <div class="prov a a-izq" data-p="1" style="--d:.2s"><b>7</b><p>…cada persona pudiera tachar su propio dicho en redes?</p><span class="chip" style="--c:var(--amarillo);color:#111">Lo digital</span></div>
-    <div class="suma a a-pop" data-p="2"><span class="mano">Al juntar las piezas, la idea ya se ve.</span></div>
+<!-- 3.3 · LAS 5 PREGUNTAS -->
+<section class="lam" id="preguntas" data-titulo="Las 5 preguntas" data-tapa="3" data-sub="3">
+  <header class="enc"><div class="rot"></div><h2 class="tit kin">Las 5 preguntas</h2><p class="intro">La prueba de la clase para saber si una idea sirve.</p></header>
+  <div class="pregs">
+    <div class="preg" data-p="1"><b class="pg-n disp">1</b><div class="pg-txt"><h4>¿El beneficio es claro y se entiende?</h4><div class="pg-r"><p>Sí. Tras el monólogo del ex, el cierre muestra lo que ofrece el show: el contraste lo hace evidente.</p></div></div><svg class="pg-ok" viewBox="0 0 60 60" aria-hidden="true"><circle class="dib" pathLength="1" cx="30" cy="30" r="26"/><path class="dib" style="--d:.45s" pathLength="1" d="M18 31l8 8 16-17"/></svg></div>
+    <div class="preg" data-p="2"><b class="pg-n disp">2</b><div class="pg-txt"><h4>¿Es diferente a la competencia?</h4><div class="pg-r"><p>Sí. Los demás anuncian la obra o al comediante; esta arranca en la vida real, con un personaje que nadie más usa.</p></div></div><svg class="pg-ok" viewBox="0 0 60 60" aria-hidden="true"><circle class="dib" pathLength="1" cx="30" cy="30" r="26"/><path class="dib" style="--d:.45s" pathLength="1" d="M18 31l8 8 16-17"/></svg></div>
+    <div class="preg" data-p="3"><b class="pg-n disp">3</b><div class="pg-txt"><h4>¿Se resume en una imagen o una frase?</h4><div class="pg-r"><p>Sí. Alguien aguantando al ex con el reloj que no para; y «Relatos de intensos vs. Relatos Intensos».</p></div></div><svg class="pg-ok" viewBox="0 0 60 60" aria-hidden="true"><circle class="dib" pathLength="1" cx="30" cy="30" r="26"/><path class="dib" style="--d:.45s" pathLength="1" d="M18 31l8 8 16-17"/></svg></div>
+    <div class="preg" data-p="4"><b class="pg-n disp">4</b><div class="pg-txt"><h4>¿Inspira varias piezas?</h4><div class="pg-r"><p>Sí. El ex sigue en el matrimonio de un amigo, la fila del banco, la primera cita… y cada una da video, historias y post.</p></div></div><svg class="pg-ok" viewBox="0 0 60 60" aria-hidden="true"><circle class="dib" pathLength="1" cx="30" cy="30" r="26"/><path class="dib" style="--d:.45s" pathLength="1" d="M18 31l8 8 16-17"/></svg></div>
+    <div class="preg" data-p="5"><b class="pg-n disp">5</b><div class="pg-txt"><h4>¿Tiene kilometraje?</h4><div class="pg-r"><p>Sí. Video: las situaciones completas · radio: la llamada y el audio son puro sonido · gráfica: el contador en 2:47:15.</p></div></div><svg class="pg-ok" viewBox="0 0 60 60" aria-hidden="true"><circle class="dib" pathLength="1" cx="30" cy="30" r="26"/><path class="dib" style="--d:.45s" pathLength="1" d="M18 31l8 8 16-17"/></svg></div>
+  </div>
+  <div class="pg-marca a a-sube" style="--d:.4s"><span class="et r">Pasa</span><div class="pg-cifra disp"><span data-paso-cuenta="5">0</span><i>/5</i></div>
+    <p class="a a-sube" data-p="6">Con las 3 situaciones: el ex pone el monólogo malo y Relatos Intensos, el bueno.</p></div>
+</section>
+
+<!-- 3.4 · CONCEPTO DECODIFICADO -->
+<section class="lam" id="decodificado" data-titulo="Concepto decodificado" data-tapa="3" data-sub="4">
+  <header class="enc"><div class="rot"></div><h2 class="tit kin">Concepto decodificado</h2><p class="intro">Con el formato de la clase: cuatro elementos que, juntos, forman el concepto creativo.</p></header>
+  <div class="deco">
+    <div class="dc dc-1 a a-sube" data-p="1" style="--c:var(--rojo)"><span class="et">Titular</span><div class="pl"><div><p class="dc-def">Introduce y atrapa la mente y el ojo del receptor.</p></div></div><b class="dc-fr">Relatos de intensos <span class="vs"><span>VS.</span></span> Relatos Intensos</b></div>
+    <div class="dc dc-2 a a-sube" data-p="2" style="--c:var(--azul)"><span class="et">Tema de campaña</span><div class="pl"><div><p class="dc-def">El storytelling: personajes, conflicto, sentimientos, entorno y marca.</p></div></div><b class="dc-fr">El ex que no se calla</b><div class="pl"><div><p class="dc-mas">Andrés: la llamada, el bar y el audio.</p></div></div></div>
+    <div class="dc dc-3 a a-sube" data-p="3" style="--c:var(--amarillo)"><span class="et">Eslogan</span><div class="pl"><div><p class="dc-def">El grito de batalla: la frase pegajosa que ayuda a recordar.</p></div></div><b class="dc-fr">Monólogos para reír… mientras puedas</b></div>
+    <div class="dc dc-4 a a-sube" data-p="4" style="--c:var(--tinta)"><span class="et">Concepto comercial</span><div class="pl"><div><p class="dc-def">Atributos, beneficios, oferta y razón para creer (RW).</p></div></div><b class="dc-fr">Historias propias · humor · drama · giros</b><div class="pl"><div><p class="dc-mas">RW: quien la cuenta, la escribió. Oferta: nueva temporada en Tickean.</p></div></div></div>
+    <div class="dc-centro" data-p="5"><span class="et">Concepto creativo</span><p class="dc-cc">Del intenso que <em>fastidia</em> a lo intenso que <em>engancha</em></p><p>Como la marca se llama Contradicción, el juego le queda como anillo al dedo.</p></div>
   </div>
 </section>
 
-<!-- 7 · EMOCIONES, MIEDOS, INSIGHTS -->
-<section class="lam" data-cap="3" data-titulo="Insight, paso 3: miedos e insights">
-  <div class="enc"><div class="rotulo izq">04 · EL INSIGHT · PASO 3: ESCUCHAR EL MIEDO</div><h2><span class="titulo b">Los miedos y lo que nos dicen</span></h2></div>
-  <div class="zona g-miedos">
-    <div class="col">
-      <div class="et grande a a-sube">Los miedos, del más bajito al más fuerte</div>
-      <div class="vol">
-        <div class="a a-izq" style="--n:1"><i></i><p>A <b>perder la noche</b> en un plan aburrido.</p></div>
-        <div class="a a-izq" style="--n:2;--d:.1s"><i></i><p>A <b>no entender</b>: «el teatro no es para mí».</p></div>
-        <div class="a a-izq" style="--n:3;--d:.2s"><i></i><p>A <b>incomodar</b>: «mejor no digo nada».</p></div>
-        <div class="a a-izq" style="--n:4;--d:.3s"><i></i><p>A que <b>me juzguen</b> por lo que pienso o siento.</p></div>
-        <div class="a a-izq" style="--n:5;--d:.4s"><i></i><p>A <b>quedar expuesto</b> y romperme delante de otros.</p></div>
-        <div class="a a-izq" style="--n:6;--d:.5s"><i></i><p>A <b>ser el único</b> que se siente así.</p></div>
-      </div>
-      <p class="nota-pie a a-sube" style="--d:.7s">Emociones de base: sorpresa, alegría, tristeza, miedo, ira y desagrado.</p>
-    </div>
-    <div class="col">
-      <div class="et grande a a-sube" data-p="1">Los insights, en la voz de Laura</div>
-      <div class="ins">
-        <span class="tira f a a-tira" data-p="1" style="--rot:-1deg">«Hablo hasta por los codos… menos de lo que me pasa».</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:.8deg;--d:.08s">«Mis mejores monólogos los he dado en la ducha».</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:-.5deg;--d:.16s">«Digo “todo bien” más veces de las que estoy bien».</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:1deg;--d:.24s">«En mi casa hay temas que se heredan sin haberse hablado nunca».</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:-.8deg;--d:.32s">«Me río de lo que me duele para que no se note».</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:.6deg;--d:.4s">«No quiero que me entretengan: quiero que me muevan algo».</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:-1deg;--d:.48s">«Le cuento más a un extraño que a los míos».</span>
-        <span class="tira f a a-tira" data-p="1" style="--rot:.9deg;--d:.56s">«Cuando alguien dice lo que yo callo, descanso».</span>
-      </div>
-    </div>
+<!-- ============ TAPA 4 ============ -->
+<section class="lam tapa" id="tapa-4" data-titulo="4 · Plataforma copy" data-tapa="4" data-sub="0" style="--fondo:var(--amarillo);--arco:var(--tinta);--num:var(--amarillo);--txt:var(--tinta)">
+  <div class="t-arco a a-arco"><span class="t-num disp">4</span></div>
+  <img class="t-lirio a a-pop" style="--d:.9s" src="assets/collage/lirio-azul.webp" alt="">
+  <div class="t-txt">
+    <div class="et a a-sube" style="--d:.3s">Punto 4 del caso</div>
+    <h2 class="t-tit disp kin" style="--d:.35s">Plataforma copy</h2>
+    <p class="t-pide a a-sube" style="--d:.65s">Concentra la redacción del anuncio en titular, subtitulares, cuerpo y eslogan. Decodificarla es repartir el mensaje en esas cuatro partes.</p>
   </div>
 </section>
 
-<!-- 8 · EL INSIGHT PRINCIPAL -->
-<section class="lam oscura" data-cap="3" data-titulo="El insight principal">
-  <img class="fondo-esc" src="assets/img/escenario.webp" alt="">
-  <div class="velo"></div>
-  <div class="rotulo claro a a-sube">EL INSIGHT PRINCIPAL</div>
-  <blockquote class="insight">
-    <span class="a a-sube" style="--d:.5s">«Lo que más necesito decir</span>
-    <span class="a a-sube" style="--d:1.1s">es justo lo que me</span>
-    <span class="a a-sube" style="--d:1.7s">enseñaron a <em class="tachado">callar<svg class="brocha" viewBox="0 0 100 100" preserveAspectRatio="none" filter="url(#rugoso)"><path class="b1" pathLength="100" vector-effect="non-scaling-stroke" d="M1 60 C 22 44, 44 66, 66 47 S 92 52, 99 40"/></svg></em>».</span>
-  </blockquote>
-  <div class="porque">
-    <div class="a a-sube" data-p="1"><b class="c-rojo">Abarca los tres pilares</b><p>Lo que callo del amor, lo que callo de mi cabeza y lo que callo por no llevar la contraria.</p></div>
-    <div class="a a-sube" data-p="1" style="--d:.15s"><b style="color:var(--azul-claro)">Explica por qué engancha</b><p>En un monólogo, alguien lo dice por mí. Por eso salgo con ganas de hablar.</p></div>
-    <div class="a a-sube" data-p="1" style="--d:.3s"><b class="c-amarillo">Señala al villano</b><p>No es la competencia: son los dichos que nos enseñaron a quedarnos callados.</p></div>
+<!-- 4 · PLATAFORMA COPY -->
+<section class="lam kvlam" id="copy" data-titulo="La plataforma copy, decodificada" data-tapa="4" data-sub="1">
+  <div class="carrusel a a-sube" data-carrusel data-focos='{"2":"titular","3":"dialogo temporada","4":"puente producto cta","5":"franja logo"}'></div>
+  <header class="enc enc-der"><div class="rot"></div><h2 class="tit kin">Plataforma copy</h2><p class="intro">El mensaje de la campaña, repartido en las cuatro partes de la clase.</p></header>
+  <div class="chips"><span data-p="1" data-hasta="1">Mensaje</span><span data-p="2" data-hasta="2">Titular</span><span data-p="3" data-hasta="3">Subtitulares</span><span data-p="4" data-hasta="4">Cuerpo</span><span data-p="5">Eslogan</span></div>
+  <div class="panel pd a a-blur" data-p="0" data-hasta="0"><p class="grande kin" style="--d:.7s">Primero el mensaje que se decodifica; después, cada parte con qué es y cómo se ve en la pieza.</p></div>
+  <div class="panel pd a a-blur" data-p="1" data-hasta="1"><h3>El mensaje que se decodifica</h3><p class="que">No va en la pieza: es el mensaje de la campaña escrito de corrido.</p>
+    <p class="mensaje">Contradicción Arteatro trae la <mark>nueva temporada</mark> de <mark>Relatos Intensos para Mentes Traviesas</mark>: <mark>monólogos</mark> con <mark>historias propias</mark>, llenos de <mark>humor</mark>, <mark>drama</mark> y <mark>giros</mark>. Nada que ver con los <mark class="r">relatos de intensos</mark> que nos ha tocado aguantar.</p></div>
+  <div class="panel pd a a-blur" data-p="2" data-hasta="2"><h3>Titular</h3><p class="que"><b>Qué es:</b> lo que atrapa; se destaca por tamaño, posición y color.</p>
+    <div class="mini-duelo"><span class="disp">Relatos<br>de intensos</span><span class="vs"><span>VS.</span></span><span class="disp">Relatos<br>intensos</span></div>
+    <p class="txt">Igual en las tres piezas: arriba, partido en dos, con el «vs.» en el círculo rojo.</p></div>
+  <div class="panel pd a a-blur" data-p="3" data-hasta="3"><h3>Subtitulares</h3><p class="que"><b>Qué es:</b> resaltan beneficios y fortalecen el titular.</p>
+    <div class="sub-fila"><span class="brocha">Nueva temporada</span>
+      <div class="por-kv">
+        <div class="dlg" data-kvi="0"><div class="dl"><span data-reloj="8:12|P.M."></span><span class="globo">Nata, ¿tienes un minutico?</span></div><div class="dl"><span data-reloj="10:59|P.M."></span><span class="globo">Vuelve, yo cambio…</span></div><div class="globo resp">¡M<span class="ast">*</span>rica, ya! Que mañana madrugo.</div></div>
+        <div class="dlg" data-kvi="1"><div class="dl"><span data-reloj="9:00|P.M."></span><span class="globo">Les voy a contar…</span></div><div class="dl"><span data-reloj="1:00|A.M."></span><span class="globo">Esta parte es la buena…</span></div><div class="globo resp">¡M<span class="ast">*</span>rica, ya! Supérela.</div></div>
+        <div class="dlg" data-kvi="2"><div class="dl"><span data-reloj="0:00"></span><span class="globo">Jefe, hoy no puedo ir…</span></div><div class="dl"><span data-reloj="17:20"></span><span class="globo">…le escribí una canción…</span></div><div class="globo resp">¡M<span class="ast">*</span>rica, ya! ¿Y el informe?</div></div>
+      </div></div></div>
+  <div class="panel pd a a-blur" data-p="4" data-hasta="4"><h3>Cuerpo</h3><p class="que"><b>Qué es:</b> explica el beneficio, breve y directo.</p>
+    <div class="puente"><span>Si te aguantaste el monólogo de tu <span class="por-kv inl"><b data-kvi="0">ex</b><b data-kvi="1">amigo</b><b data-kvi="2">empleado</b></span> intenso,</span><svg viewBox="0 0 120 30" aria-hidden="true"><path d="M4 20C40 6 80 6 112 14M98 4l16 10-18 8"/></svg><span>te mereces uno que sí valga la pena.</span></div>
+    <div class="prod"><span class="cabecera">Contradicción presenta:</span><b>Relatos Intensos para Mentes Traviesas</b><span class="attr">Historias propias · humor · drama · giros</span></div>
+    <p class="cta-l">Separa tu puesto en Tickean</p></div>
+  <div class="panel pd a a-blur" data-p="5"><h3>Eslogan</h3><p class="que"><b>Qué es:</b> el grito de batalla; va al final para sellar la recordación.</p>
+    <div class="franja mini-franja"><span class="l1">Monólogos para reír…</span><span class="l2">mientras puedas.</span></div>
+    <p class="txt">Va con el producto y el logo de Contradicción Arteatro. Ahora las tres piezas pasan solas.</p></div>
+</section>
+
+<!-- ============ TAPA 5 ============ -->
+<section class="lam tapa" id="tapa-5" data-titulo="5 · Key Visual" data-tapa="5" data-sub="0" data-tono="oscuro" style="--fondo:var(--rojo);--arco:var(--tinta);--num:var(--crema);--txt:var(--crema)">
+  <div class="t-arco a a-arco"><span class="t-num disp">5</span></div>
+  <img class="t-lirio a a-pop" style="--d:.9s" src="assets/collage/lirio-amarillo.webp" alt="">
+  <div class="t-txt">
+    <div class="et a a-sube" style="--d:.3s">Punto 5 del caso</div>
+    <h2 class="t-tit disp kin" style="--d:.35s">Key Visual</h2>
+    <p class="t-pide a a-sube" style="--d:.65s">Como lo pidió el profesor: el KV lleva eslogan, logo de marca y producto, y se explica.</p>
+    <ol class="t-lista">
+      <li class="a a-sube" style="--d:.85s"><b>5.1</b>El KV y cómo se explica</li>
+      <li class="a a-sube" style="--d:.95s"><b>5.2</b>¿El KV cumple el objetivo del cliente?</li>
+    </ol>
   </div>
 </section>
 
-<!-- 9 · IDEACIÓN -->
-<section class="lam" data-cap="4" data-titulo="Ideación: las técnicas">
-  <div class="enc"><div class="rotulo izq">05 · LA IDEACIÓN</div><h2><span class="titulo b">Cómo sacamos la idea</span></h2></div>
-  <div class="zona g-idea">
-    <div class="tarj tec a a-sube"><div class="et">Punto de partida · La básica</div><h4>La primera idea, la obvia</h4><p class="serif">«Monólogos escritos y actuados por la misma persona».</p><p>Es la ventaja competitiva, pero dicha así no emociona. La guardamos como razón para creer.</p></div>
-    <div class="tarj tec a a-sube" style="--d:.15s"><div class="et c-rojo">Técnica 1 · La viga en el ojo ajeno</div><h4>¿Qué hace mal la categoría?</h4>
-      <ul class="lista">
-        <li>El stand-up se quedó con la palabra «monólogos» y todo lo resuelve con chiste.</li>
-        <li>El microteatro vende el formato: 15 minutos, 15 personas.</li>
-        <li>El teatro de autor le habla al que ya va a teatro.</li>
-        <li>Casi todos anuncian cara + título + fecha. <b>Nadie promete lo que te pasa adentro.</b></li>
-      </ul>
-      <p class="dato"><b>11,8 %</b> de los colombianos fue a teatro, ópera o danza <i>(DANE, 2020)</i>. · <b>91,4 %</b> dice que su salud mental es buena, y la ansiedad se cuadruplicó <i>(ENSM 2025)</i>.</p>
-    </div>
-    <div class="tarj tec a a-sube" style="--d:.3s"><div class="et c-azul">Técnica 2 · La random</div><h4>Un elemento al azar: los dichos de la abuela</h4>
-      <div class="dichos"><span class="tira f" style="--rot:-2deg">Calladita te ves más bonita</span><span class="tira f" style="--rot:1.5deg">La ropa sucia se lava en casa</span><span class="tira f" style="--rot:-1deg">Al mal tiempo, buena cara</span></div>
-      <p>¿Y si los cruzamos con el nombre de la marca?</p>
-    </div>
-    <div class="juego a a-pop" data-p="1">
-      <div class="jg-l"><span class="titulo centro">Contra</span><span class="jg-mas">+</span><span class="titulo centro jg-dic">dicción</span></div>
-      <span class="jg-fl">→</span>
-      <div class="jg-r"><span class="titulo centro">Contra <span class="c-rojo">el dicho</span></span></div>
-      <p>Si la marca se llama Contradicción, que haga lo que dice su nombre: <b>llevarle la contraria al dicho</b>.</p>
-    </div>
+<!-- 5.1 · EL KV -->
+<section class="lam kvlam" id="kv" data-titulo="El KV y cómo se explica" data-tapa="5" data-sub="1">
+  <div class="carrusel a a-sube" data-carrusel data-focos='{"1":"franja","2":"logo cta","3":"arcoDer producto","4":"arcoIzq arcoDer","5":"arcoDer","6":"zeta","7":"arcoIzq buzo"}'></div>
+  <header class="enc enc-der"><div class="rot"></div><h2 class="tit kin">El Key Visual</h2><p class="intro">Lo que debe tener según el profesor y cómo se explica, en ese orden.</p></header>
+  <div class="chips"><span data-p="1" data-hasta="1">1</span><span data-p="2" data-hasta="2">2</span><span data-p="3" data-hasta="3">3</span><span data-p="4" data-hasta="4">4</span><span data-p="5" data-hasta="5">5</span><span data-p="6" data-hasta="6">6</span><span data-p="7">7</span></div>
+  <div class="panel pd a a-blur" data-p="0" data-hasta="0"><p class="grande kin" style="--d:.7s">Debe tener eslogan, logo de marca y producto. Y se explica: en qué consiste, beneficio y ventaja, colores y letra, y desarrollo.</p></div>
+  <div class="panel pd a a-blur" data-p="1" data-hasta="1"><h3>1 · Eslogan</h3><div class="franja mini-franja"><span class="l1">Monólogos para reír…</span><span class="l2">mientras puedas.</span></div><p class="txt">En una franja negra de borde a borde: es lo único que toca los dos bordes. Lo distinto se recuerda (efecto Von Restorff).</p></div>
+  <div class="panel pd a a-blur" data-p="2" data-hasta="2"><h3>2 · Logo de marca</h3><div class="logo-grande"><span class="logo-ca" style="font-size:150px"><svg><use href="#logo-ca"/></svg><span class="n">CONTRA<br>DICCIÓN</span><span class="a">ARTEATRO</span></span><p class="txt">Abajo a la derecha, junto a «Separa tu puesto en Tickean»: es lo último que se lee.</p></div></div>
+  <div class="panel pd a a-blur" data-p="3" data-hasta="3"><h3>3 · Producto (packshot)</h3><p class="txt">Es un servicio: el producto se muestra con <mark>el show mismo</mark>, el escenario con el actor en función y el público.</p><div class="prod" style="margin-top:30px"><span class="cabecera">Contradicción presenta:</span><b>Relatos Intensos para Mentes Traviesas</b></div></div>
+  <div class="panel pd a a-blur" data-p="4" data-hasta="4"><h3>4 · En qué consiste</h3><p class="txt">Un <mark>duelo</mark>. A la izquierda, <b>el intenso que fastidia</b>: Andrés y quien lo aguanta, con globos que marcan la hora. A la derecha, <b>lo intenso que engancha</b>: un actor real de la compañía en plena función.</p>
+    <p class="por-kv que" style="margin-top:22px"><span data-kvi="0">En esta pieza: Samantha Agudelo, «¿Me devuelves la llamada cuando puedas?»</span><span data-kvi="1">En esta pieza: Nicolás Revi, «Estoy cansado»</span><span data-kvi="2">En esta pieza: Mayra Alejandra Frade, «Manual para superar la muerte de tu madre»</span></p></div>
+  <div class="panel pd a a-blur" data-p="5" data-hasta="5"><h3>5 · Beneficio y ventaja competitiva</h3><p class="que"><b>Beneficio:</b> monólogos con historias propias, humor, drama y giros, en una sala íntima.</p><p class="que" style="border-color:var(--azul)"><b style="color:var(--azul)">Ventaja:</b> cada artista escribe y actúa su historia; son actores reales; nadie más usa un personaje de la vida real.</p></div>
+  <div class="panel pd a a-blur" data-p="6" data-hasta="6"><h3>6 · Colores, tamaños y letra</h3>
+    <div class="paleta"><span style="--c:#f3ebdd"><i></i><b>Crema</b>papel y aire</span><span style="--c:#141210"><i></i><b>Negro</b>texto y franja</span><span style="--c:#b5161d"><i></i><b>Rojo</b>el «vs.» del duelo</span><span style="--c:#1d4a72"><i></i><b>Azul</b>collage</span><span style="--c:#f0b323"><i></i><b>Amarillo</b>«mientras puedas»</span><span style="--c:#c99a2e"><i></i><b>Mostaza</b>solo el buzo</span></div>
+    <p class="txt">Titular lo más grande, franja lo segundo; se lee en Z en 1,7 s. Didone condensada, como los afiches de la marca.</p></div>
+  <div class="panel pd a a-blur" data-p="7"><h3>7 · Desarrollo y posible ejecución</h3><div class="hoja"><p class="txt">3 posts y el video. Andrés es el personaje de marca, siempre igual. Puede seguir: matrimonio, fila del banco, primera cita… en historias, vallas y radio.</p><img src="assets/kv/andres-hoja.webp" alt="Hoja de personaje de Andrés"></div></div>
+</section>
+
+<!-- 5.2 · OBJETIVO DEL CLIENTE -->
+<section class="lam oscura kvlam" id="kv-objetivo" data-titulo="¿El KV cumple el objetivo del cliente?" data-tapa="5" data-sub="2" data-tono="oscuro">
+  <header class="enc"><div class="rot"></div><h2 class="tit kin">¿El KV cumple el objetivo del cliente?</h2><p class="intro">El caso pide evidenciar que Relatos Intensos es el show de monólogos mejor valorado por asistentes y conocedores. Así lo muestra el KV:</p></header>
+  <div class="carrusel obj-car a a-sube" data-carrusel data-focos='{"1":"arcoDer temporada","2":"arcoDer","3":"arcoIzq buzo","4":"arcoDer"}'></div>
+  <div class="obj-grid">
+    <div class="og a a-sube" data-p="1"><span class="et"><svg class="ic"><use href="#i-grupo"/></svg>Asistentes</span><p>El arco derecho muestra al público pegado al escenario, riéndose: la valoración se ve. «Nueva temporada»: vuelve porque la gente lo pide.</p></div>
+    <div class="og a a-sube" data-p="2"><span class="et"><svg class="ic"><use href="#i-birrete"/></svg>Conocedores</span><p>Actúan artistas emergentes destacados en las academias más reconocidas de Bogotá, y cada uno escribe su historia.</p></div>
+    <div class="og a a-sube" data-p="3"><span class="et"><svg class="ic"><use href="#i-bombillo"/></svg>Propuesta innovadora</span><p>Nadie vende monólogos con un personaje de la vida real ni empieza fuera del escenario.</p></div>
+    <div class="og og-sig a a-sube" data-p="4"><span class="et"><svg class="ic"><use href="#i-flecha"/></svg>Siguiente fase (propuesta)</span><p>Llenar el lado derecho con calificaciones y frases reales del público y la voz de maestros de las academias. Sin inventar cifras.</p></div>
   </div>
 </section>
 
-<!-- 10 · EL CONCEPTO DECODIFICADO -->
-<section class="lam" data-cap="5" data-titulo="El concepto creativo, decodificado">
-  <div class="enc centro"><div class="rotulo">06 · CONCEPTO CREATIVO</div><h2><span class="titulo centro">Contra el dicho</span></h2><p class="bajada a a-sube" style="--d:.3s">Contradicción le lleva la contraria a los dichos que nos enseñaron a callar.</p></div>
-  <div class="zona g-concepto">
-    <div class="caja a a-arco" style="--c:var(--rojo);--d:.4s"><div class="et">Titular</div><div class="c-tit"><span>De eso <s class="tachado">no<svg class="brocha" viewBox="0 0 100 100" preserveAspectRatio="none" filter="url(#rugoso)"><path class="b1" pathLength="100" vector-effect="non-scaling-stroke" d="M1 60 C 22 44, 44 66, 66 47 S 92 52, 99 40"/></svg></s> <b class="mano">sí</b> se habla.</span></div><p>El título que atrapa el ojo: un dicho, tachado y corregido.</p></div>
-    <div class="caja a a-arco" style="--c:var(--azul);--d:.55s"><div class="et">Tema de campaña</div><div class="c-tit chico">Nos enseñaron a callar. Ellos escribieron lo contrario.</div><p>Crecimos entre dichos que mandan a callar. Diez personas se suben solas a decir lo que escribieron con su propia vida, y tú, a oscuras, descubres que no eras el único.</p></div>
-    <div class="caja a a-arco" style="--c:var(--amarillo);--d:.7s;--tx:#111"><div class="et">Eslogan</div><div class="c-tit"><span class="mano2">Alguien tenía que decirlo.</span></div><p>El grito de batalla. Ya se dice en la calle y sirve de sello para las reseñas del público.</p></div>
-    <div class="caja a a-arco" style="--c:var(--tinta);--d:.85s"><div class="et">Concepto comercial</div><p class="com"><b>10 monólogos, 5 distintos cada noche.</b> Cada uno escrito y actuado por la misma persona: talento emergente de las academias más reconocidas de Bogotá. Amor, cordura y rebelión en sala íntima. Febrero de 2027 · 8:00 p. m. · Teatro Cofal · Boletas en Tickean.</p></div>
-    <div class="por-pilar a a-sube" data-p="1">
-      <div class="et">Un dicho por pilar</div>
-      <div class="pp"><b class="c-rojo">Amor</b><span>La ropa sucia se lava en <s>casa</s> <i class="mano c-rojo">escena</i>.</span></div>
-      <div class="pp"><b class="c-azul">Cordura</b><span>Al mal tiempo, <s>buena cara</s> <i class="mano c-azul">la cara que tengas</i>.</span></div>
-      <div class="pp"><b style="color:#b98300">Rebelión</b><span>Calladita <s>te ves más bonita</s> <i class="mano" style="color:#b98300">no te ves</i>.</span></div>
-    </div>
+<!-- ============ TAPA 6 ============ -->
+<section class="lam tapa" id="tapa-6" data-titulo="6 · Video" data-tapa="6" data-sub="0" data-tono="oscuro" style="--fondo:var(--azul);--arco:var(--amarillo);--num:var(--azul);--txt:var(--crema)">
+  <div class="t-arco a a-arco"><span class="t-num disp">6</span></div>
+  <img class="t-lirio a a-pop" style="--d:.9s" src="assets/collage/lirio-rojo.webp" alt="">
+  <div class="t-txt">
+    <div class="et a a-sube" style="--d:.3s">Punto 6 del caso</div>
+    <h2 class="t-tit disp kin" style="--d:.35s">Video</h2>
+    <p class="t-pide a a-sube" style="--d:.65s">«La llamada»: 20 segundos en 9:16 y su storyline, con las dos columnas de la clase: video y audio.</p>
   </div>
 </section>
 
-<!-- 11 · LAS 5 PREGUNTAS -->
-<section class="lam" data-cap="5" data-titulo="5 preguntas que desnudan la idea">
-  <div class="enc"><div class="rotulo izq">06 · CONCEPTO CREATIVO · LA PRUEBA</div><h2><span class="titulo b">5 preguntas que desnudan la idea</span></h2></div>
-  <div class="zona g-cinco">
-    <div class="pregs">
-      <div class="preg a a-izq"><b>1</b><div><h4>¿Deja claro el beneficio o la ventaja, y se entiende?</h4><p>Sí. Aquí se dice lo que se calla, y lo dice quien lo escribió.</p></div><i class="ok"></i></div>
-      <div class="preg a a-izq" style="--d:.12s"><b>2</b><div><h4>¿Es diferente a lo que hace la competencia?</h4><p>Sí. La categoría muestra cara, título y fecha. Nadie promete un efecto ni usa los dichos.</p></div><i class="ok"></i></div>
-      <div class="preg a a-izq" style="--d:.24s"><b>3</b><div><h4>¿Se resume en una imagen o en una frase?</h4><p>Sí. Un dicho tachado: «De eso <s>no</s> sí se habla».</p></div><i class="ok"></i></div>
-      <div class="preg a a-izq" style="--d:.36s"><b>4</b><div><h4>¿Inspira varios anuncios y piezas?</h4><p>Sí. Hay un dicho por pilar, por monólogo y por temporada. Y cada espectador puede tachar el suyo.</p></div><i class="ok"></i></div>
-      <div class="preg a a-izq" style="--d:.48s"><b>5</b><div><h4>¿Crece en video, audio y gráfica? ¿Tiene kilometraje?</h4><p>Sí. En audio es una voz que lleva la contraria; en video, un monólogo; en gráfica, un tachón. Alcanza para las 4 temporadas.</p></div><i class="ok"></i></div>
+<!-- 6.1 · VIDEO + STORYLINE -->
+<section class="lam oscura" id="video" data-titulo="«La llamada»: video y storyline" data-tapa="6" data-sub="1" data-tono="oscuro">
+  <div class="tel a a-sube">
+    <div class="tel-pant">
+      <video id="vid" src="assets/video/la-llamada.mp4" poster="assets/video/la-llamada-poster.jpg" muted playsinline preload="auto"></video>
+      <i class="tel-isla"></i>
+      <span class="tel-aviso" id="v-aviso"><span>Arranca en 3 s, sin sonido</span><i></i></span>
     </div>
-    <figure class="kv-img inclinada a a-pop" style="--d:.5s"><img src="assets/piezas/kv-maestro.jpg" alt="Key Visual maestro"></figure>
+  </div>
+  <div class="tel-ctrl a a-sube" style="--d:.25s">
+    <button class="v-btn v-son" id="v-sonido" type="button" title="Sonido del video (V)"><svg class="ic"><use href="#i-mudo"/></svg><span>Sonido (V)</span></button>
+    <button class="v-btn v-ic" id="v-play" type="button" title="Pausa / seguir"><svg class="ic"><use href="#i-play"/></svg></button>
+    <button class="v-btn v-ic" id="v-inicio" type="button" title="Desde el inicio"><svg class="ic"><use href="#i-reinicio"/></svg></button>
+  </div>
+  <header class="enc enc-v"><div class="rot"></div><h2 class="tit kin">«La llamada»: storyline</h2><p class="intro">El video se detiene en cada escena para leerla; al final vuelve a empezar con sonido.</p></header>
+  <div class="v-tira a a-sube" style="--d:.4s" id="v-tira"></div>
+  <div class="v-escenas a a-sube" style="--d:.5s" id="v-escenas"></div>
+</section>
+
+<!-- ============ GRACIAS ============ -->
+<section class="lam gracias" id="gracias" data-titulo="Gracias" data-tapa="fin">
+  <div class="g-duelo">
+    <div class="p-izq a a-izq" style="--d:.15s"><span class="disp">Relatos</span><span class="disp">de intensos</span></div>
+    <span class="vs a a-pop" style="--d:.6s"><span>VS.</span></span>
+    <div class="p-der a a-der" style="--d:.15s"><span class="disp">Relatos</span><span class="disp">intensos</span></div>
+  </div>
+  <img class="g-lirio g-lirio-i a a-pop" style="--d:1s" src="assets/collage/lirio-rojo.webp" alt="">
+  <img class="g-lirio g-lirio-d a a-pop" style="--d:1.1s" src="assets/collage/lirio-azul.webp" alt="">
+  <p class="g-gracias kin" style="--d:.8s">Gracias</p>
+  <div class="g-franja franja a a-mask" style="--d:1.3s"><span class="l1">Monólogos para reír…</span><span class="l2">mientras puedas.</span></div>
+  <div class="g-pie a a-sube" style="--d:1.6s">
+    <div><b>William Fonseca y Mariana Silva</b><span>Publicidad 2 · Prof. Rüdiger Stuart González · Politécnico Grancolombiano · 2027</span></div>
+    <span class="logo-ca" style="font-size:66px"><svg><use href="#logo-ca"/></svg><span class="n">CONTRA<br>DICCIÓN</span><span class="a">ARTEATRO</span></span>
   </div>
 </section>
 
-<!-- 12 · PLATAFORMA COPY -->
-<section class="lam" data-cap="6" data-titulo="Plataforma copy">
-  <div class="enc"><div class="rotulo izq">07 · PLATAFORMA COPY</div><h2><span class="titulo b">El mensaje, pieza por pieza</span></h2></div>
-  <div class="zona g-copy">
-    <div class="ig a a-pop">
-      <div class="ig-cab"><span class="ig-av" data-logo="30"></span><b>contradiccionarteatro</b><span class="ig-pt">···</span></div>
-      <div class="ig-img"><img src="assets/piezas/kv-maestro.jpg" alt="">
-        <i class="pin" style="left:79%;top:27%;--c:var(--rojo)" data-p="1">1</i>
-        <i class="pin" style="left:62%;top:44.5%;--c:var(--azul)" data-p="2">2</i>
-        <i class="pin" style="left:20%;top:83%;--c:var(--azul)" data-p="2">2</i>
-        <i class="pin" style="left:36%;top:92%;--c:var(--amarillo);color:#111" data-p="4">4</i>
-      </div>
-      <div class="ig-txt"><i class="pin en-txt" style="--c:var(--tinta)" data-p="3">3</i><b>contradiccionarteatro</b> Nos enseñaron que calladitos nos vemos más bonitos. Diez artistas pensaron lo contrario: escribieron lo que casi nadie se atreve a decir y se suben solos a decirlo, a un metro de ti. Vas a reírte donde no toca, a quedarte en silencio y a salir con ganas de hablar…</div>
-    </div>
-    <div class="partes">
-      <div class="parte a a-der" data-p="1" style="--c:var(--rojo)"><i class="pin">1</i><div><div class="et">Titular</div><h4>De eso <s>no</s> sí se habla.</h4><p>Breve, atrapa por emoción y completa la imagen: la tira tapa la boca, el titular la destapa.</p></div></div>
-      <div class="parte a a-der" data-p="2" style="--c:var(--azul)"><i class="pin">2</i><div><div class="et">Subtitulares</div><h4>Amor · Cordura · Rebelión<br>10 monólogos, 5 distintos cada noche</h4><p>Hacen pausa en la lectura y destacan lo que hay: los tres pilares y la oferta.</p></div></div>
-      <div class="parte a a-der" data-p="3" style="--c:var(--tinta)"><i class="pin">3</i><div><div class="et">El cuerpo</div><p class="cuerpo-txt">Nos enseñaron que calladitos nos vemos más bonitos. Diez artistas pensaron lo contrario: <mark>escribieron lo que casi nadie se atreve a decir y se suben solos a decirlo</mark>, a un metro de ti. Vas a reírte donde no toca, a quedarte en silencio y a salir con ganas de hablar. Relatos Intensos para Mentes Traviesas, el show de monólogos de Contradicción Arteatro. Febrero de 2027 · Teatro Cofal · Boletas en Tickean.</p><p>Sencillo y directo. Explica la ventaja: lo escribe y lo actúa la misma persona.</p></div></div>
-      <div class="parte a a-der" data-p="4" style="--c:var(--amarillo);--tx:#111"><i class="pin">4</i><div><div class="et">Slogan</div><h4 class="mano2 grande">Alguien tenía que decirlo.</h4><p>Va al final para sellar la recordación. Resume la relación con el público: lo decimos por ti.</p></div></div>
-    </div>
+<!-- ============ CROMO: sección, progreso y controles ============ -->
+<div id="cromo">
+  <div id="c-sec"><b id="c-num"></b><span id="c-nom"></span><i id="c-sub"></i></div>
+  <div id="c-prog"></div>
+  <div id="c-btns">
+    <button id="b-indice" type="button" title="Índice (I)" aria-label="Índice"><svg class="ic"><use href="#i-indice"/></svg></button>
+    <button id="b-ant" type="button" title="Anterior (←)" aria-label="Anterior"><svg class="ic"><use href="#i-izq"/></svg></button>
+    <button id="b-sig" type="button" title="Siguiente (→)" aria-label="Siguiente"><svg class="ic"><use href="#i-der"/></svg></button>
+    <button id="b-musica" type="button" title="Música (M)" aria-label="Música de fondo"><span class="eq"><i></i><i></i><i></i></span><svg class="ic"><use href="#i-mudo"/></svg></button>
+    <button id="b-full" type="button" title="Pantalla completa (F)" aria-label="Pantalla completa"><svg class="ic"><use href="#i-pantalla"/></svg></button>
   </div>
-</section>
-
-<!-- 13 · CONCEPT BOARD: KV -->
-<section class="lam" data-cap="7" data-titulo="Concept board: el Key Visual">
-  <div class="enc"><div class="rotulo izq">08 · CONCEPT BOARD</div><h2><span class="titulo b">El Key Visual</span></h2></div>
-  <div class="zona g-kv">
-    <figure class="kv-img a a-pop"><img src="assets/piezas/kv-maestro.jpg" alt="Key Visual maestro: De eso sí se habla"></figure>
-    <div class="kv-exp">
-      <div class="a a-sube" style="--d:.2s"><div class="et">Slogan</div><p class="mano2 slog">Alguien <u>tenía</u> que decirlo.</p></div>
-      <div class="a a-sube" data-p="1"><div class="et">En qué consiste la idea</div><p>Un rostro con la boca tapada por una tira de papel: el dicho que nos calla. En el titular, una brocha tacha el «no» y escribe «sí».</p></div>
-      <div class="a a-sube" data-p="1" style="--d:.12s"><div class="et">Relación con el beneficio y la ventaja</div><p>La tira es lo que nos enseñaron. El tachón es lo que hace el show: decirlo. La ventaja (lo escribe y lo actúa la misma persona) vive en el subtitular.</p></div>
-      <div class="a a-sube" data-p="2"><div class="et">Por qué se ve así</div><p>Es la línea de sus afiches: papel crema, arcos, retrato en blanco y negro, lirios y manuscritos. <b class="c-rojo">Rojo</b> amor, <b class="c-azul">azul</b> cordura y <b style="color:#b98300">amarillo</b> rebelión. La letra de máquina es lo que nos dictaron; el brochazo a mano, lo que decimos nosotros.</p></div>
-      <div class="a a-sube" data-p="2" style="--d:.12s"><div class="et">Cómo se desarrolla</div><p>Un KV maestro, tres versiones por pilar, piezas para Instagram, afiche de calle y la boleta.</p></div>
-    </div>
-    <div class="kv-pack a a-der" data-p="3">
-      <div class="et">Logo + pack shot</div>
-      <div class="boleta"><div class="b-izq"><span data-logo="54"></span></div><div class="b-cen"><small>CONTRADICCIÓN PRESENTA</small><b>RELATOS INTENSOS<br>PARA MENTES TRAVIESAS</b><span>Temporada 1 · Febrero 2027 · 8:00 p. m.<br>Teatro Cofal · Cra. 24 #39B-07</span></div><div class="b-der"><span class="mano">Admite<br>1 mente<br>traviesa</span></div></div>
-      <p class="nota-pie">En un show, el empaque es la boleta: lo que la gente compra, guarda y sube a sus historias.</p>
-    </div>
+</div>
+<div id="pista"><b>→</b> avanza · <b>←</b> devuelve · <b>M</b> música · <b>I</b> índice · <b>F</b> pantalla completa</div>
+<div id="indice" hidden>
+  <div class="ind-caja">
+    <div class="ind-cab"><span class="disp">Índice</span><button id="b-cerrar" type="button" aria-label="Cerrar índice">×</button></div>
+    <div class="ind-grid" id="ind-grid"></div>
+    <p class="ind-teclas"><b>→</b> / espacio / clic: siguiente · <b>←</b>: anterior · <b>1–6</b>: ir a una tapa · <b>0</b>: portada · <b>I</b>: índice · <b>M</b>: música · <b>V</b>: sonido del video · <b>F</b>: pantalla completa</p>
   </div>
-</section>
-
-<!-- 14 · EL SISTEMA -->
-<section class="lam" data-cap="7" data-titulo="Una idea con kilometraje">
-  <div class="enc"><div class="rotulo izq">08 · CONCEPT BOARD · EL DESARROLLO</div><h2><span class="titulo b">Una idea con kilometraje</span></h2></div>
-  <div class="zona g-sistema">
-    <div class="tres-kv">
-      <figure class="kv-img a a-pop" style="--r:-4deg"><img src="assets/piezas/kv-amor.jpg" alt="KV Amor"><figcaption><b class="c-rojo">Amor</b> La ropa sucia se lava en escena</figcaption></figure>
-      <figure class="kv-img a a-pop" style="--r:0deg;--d:.15s"><img src="assets/piezas/kv-cordura.jpg" alt="KV Cordura"><figcaption><b class="c-azul">Cordura</b> Al mal tiempo, la cara que tengas</figcaption></figure>
-      <figure class="kv-img a a-pop" style="--r:4deg;--d:.3s"><img src="assets/piezas/kv-rebelion.jpg" alt="KV Rebelión"><figcaption><b style="color:#b98300">Rebelión</b> Calladita no te ves</figcaption></figure>
-    </div>
-    <div class="piezas">
-      <figure class="pz muro a a-sube" data-p="1"><div class="muro-img"><img src="assets/img/muro.webp" alt=""><img class="pegado" src="assets/piezas/kv-maestro.jpg" alt=""></div><figcaption>Afiche de calle en Teusaquillo y Chapinero</figcaption></figure>
-      <figure class="pz a a-sube" data-p="1" style="--d:.15s"><div class="tel"><div class="historia papel">
-          <small>CONTRADICCIÓN ARTEATRO</small><b class="titulo centro">Tacha tu dicho</b>
-          <span class="tira f" style="--rot:-3deg">Los hombres no lloran</span><i class="mano c-rojo">sí lloran. y hablan.</i>
-          <span class="tira f" style="--rot:2deg">De eso no se habla</span><i class="mano c-rojo">hablemos.</i>
-          <em>Escribe el dicho que te calló,<br>táchalo y etiquétanos.</em><span class="mano2">Alguien tenía que decirlo.</span></div></div><figcaption>Historia para que cada quien tache su dicho</figcaption></figure>
-      <figure class="pz a a-sube" data-p="1" style="--d:.3s"><div class="resena papel"><div class="estrellas">★★★★★</div><p class="mano2">«Alguien tenía que decirlo: salí y llamé a mi mamá».</p><small>Asistente · función de febrero</small><span class="sello">Ejemplo<br>de formato</span></div><figcaption>Reseñas del público como piezas</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- 15 · STORYTELLING -->
-<section class="lam" data-cap="8" data-titulo="Storytelling: la historia antes del video">
-  <div class="enc"><div class="rotulo izq">09 · STORYTELLING</div><h2><span class="titulo b">La historia, antes del video</span></h2></div>
-  <div class="zona g-story">
-    <div class="elem">
-      <div class="tarj a a-sube"><div class="et c-rojo">Personaje</div><p><b>Laura, 29 años.</b> Aparenta estar bien y desconfía de lo masivo. Le interesan las historias honestas. Su intención: atreverse a decir lo que calla.</p></div>
-      <div class="tarj a a-sube" style="--d:.1s"><div class="et c-azul">Escenario</div><p><b>Cuándo:</b> un jueves de febrero de 2027, 8:00 p. m. <b>Dónde:</b> la casa de su infancia, la oficina y un teatro pequeño del Parkway.</p></div>
-      <div class="tarj a a-sube" style="--d:.2s"><div class="et" style="color:#b98300">Motivación</div><p><b>Conflicto:</b> le enseñaron a callar. <b>Emoción:</b> un miedo que se vuelve sorpresa. <b>Sentimiento:</b> alivio y admiración.</p></div>
-      <div class="tarj a a-sube" style="--d:.3s"><div class="et">Tono</div><p>Íntimo y confesional. Provocador al comienzo, reflexivo en el medio y de alivio al final.</p></div>
-    </div>
-    <div class="trama">
-      <div class="acto a a-arco" data-p="1" style="--c:var(--rojo)"><b>La intro</b><p>A Laura le enseñaron a callar con dichos: de niña, en la casa y en el trabajo.</p></div>
-      <div class="acto a a-arco" data-p="1" style="--c:var(--azul);--d:.15s"><b>El nudo</b><p>Aprendió tan bien que lo más importante nunca lo ha dicho. Una noche, una desconocida sola en escena dice justo lo que ella calla.</p></div>
-      <div class="acto a a-arco" data-p="1" style="--c:var(--amarillo);--d:.3s;--tx:#111"><b>El desenlace</b><p>Alguien le llevó la contraria al dicho. Laura sale con la boca destapada: de eso sí se habla.</p></div>
-    </div>
-    <div class="guion a a-pop" data-p="2">
-      <div class="et">El guion: un monólogo en primera persona</div>
-      <p>De niña me dijeron: <i>calladita te ves más bonita.</i><br>En la casa: <i>la ropa sucia se lava en casa.</i><br>En el trabajo: <i>al mal tiempo, buena cara.</i></p>
-      <p>Y aprendí. Aprendí tan bien, que lo más importante que tengo por decir, nunca lo he dicho.</p>
-      <p>Hasta que una noche, en un teatro pequeño, una desconocida se paró sola frente a mí, y lo dijo. Todo lo que yo me callo.</p>
-      <p>Nadie me había llevado la contraria tan bonito.</p>
-      <p><b>De eso, sí se habla.</b></p>
-    </div>
-  </div>
-</section>
-
-<!-- 16 · STORY LINE + VIDEO -->
-<section class="lam" data-cap="8" data-titulo="Story line y video para redes">
-  <div class="enc"><div class="rotulo izq">09 · STORY LINE · VIDEO 9:16 PARA REDES</div><h2><span class="titulo b">El video: un monólogo de 47 segundos</span></h2></div>
-  <div class="zona g-video">
-    <table class="sl a a-sube">
-      <thead><tr><th>Video</th><th>Audio</th><th>Texto / Graphics</th></tr></thead>
-      <tbody>
-        <tr><td>Papel crema. Retrato en blanco y negro de Laura dentro de un arco rojo. Una tira de papel cae y le tapa la boca.</td><td>Golpe seco de papel. <b>LOC OFF (Laura):</b> «De niña me dijeron: calladita te ves más bonita».</td><td>Tira a máquina: «Calladita te ves más bonita».</td></tr>
-        <tr><td>Caen dos tiras más, una sobre otra, hasta taparle media cara. La cámara se acerca despacio.</td><td>Dos golpes de papel. <b>LOC OFF:</b> «En la casa: la ropa sucia se lava en casa. En el trabajo: al mal tiempo, buena cara».</td><td>Tiras: «La ropa sucia se lava en casa» y «Al mal tiempo, buena cara».</td></tr>
-        <tr><td>Solo quedan sus ojos. La imagen se oscurece poco a poco.</td><td>Nota grave sostenida. <b>LOC OFF:</b> «Y aprendí. Aprendí tan bien, que lo más importante que tengo por decir, nunca lo he dicho».</td><td>Texto pequeño: «…nunca lo he dicho».</td></tr>
-        <tr><td>Negro. Un arco de luz se abre como telón: escenario pequeño, una silla y un solo reflector.</td><td>Entra el piano. <b>LOC OFF:</b> «Hasta que una noche, en un teatro pequeño, una desconocida se paró sola frente a mí, y lo dijo. Todo lo que yo me callo».</td><td>Rótulo: «Un teatro pequeño · Bogotá».</td></tr>
-        <tr><td>Vuelve el retrato. Las tiras se rasgan y salen volando. Florece un lirio rojo. Laura queda con la boca destapada.</td><td>Tres rasgados de papel; la música sube. <b>LOC OFF:</b> «Nadie me había llevado la contraria tan bonito».</td><td>Sin texto: manda la imagen.</td></tr>
-        <tr><td>Tres arcos (rojo, azul y amarillo) con tres rostros.</td><td><b>LOC OFF (voz de marca):</b> «Relatos Intensos para Mentes Traviesas. Diez monólogos escritos y actuados por quien los vivió».</td><td>«Amor · Cordura · Rebelión». «10 monólogos, 5 distintos cada noche».</td></tr>
-        <tr><td>Papel. El titular llena la pantalla: una brocha roja tacha el «no» y escribe «sí».</td><td>Trazo de brocha. <b>LOC OFF (Laura):</b> «De eso, sí se habla».</td><td>Titular: «De eso <s>no</s> sí se habla».</td></tr>
-        <tr><td>Cierre con logo, fecha y lugar.</td><td>Acorde final. <b>LOC OFF (marca):</b> «Contradicción Arteatro. Alguien tenía que decirlo».</td><td>Logo, eslogan y «Febrero 2027 · Teatro Cofal · Boletas en Tickean».</td></tr>
-      </tbody>
-    </table>
-    <div class="tel grande a a-pop" style="--d:.3s">
-      <video id="video-campana" src="assets/video/contra-el-dicho.mp4" poster="assets/video/portada.jpg" playsinline preload="metadata"></video>
-      <button class="play" id="btn-play" aria-label="Reproducir el video"><i></i></button>
-    </div>
-    <p class="nota-pie video-nota a a-sube" style="--d:.5s">Voces clonadas con IA local (con permiso de sus dueños): Adriana es Laura; William es la voz de la marca. Imágenes generadas con IA.</p>
-  </div>
-</section>
-
-<!-- 17 · EL PLAN -->
-<section class="lam" data-cap="9" data-titulo="El plan: así cumple los objetivos">
-  <div class="enc"><div class="rotulo izq">10 · EL PLAN 2027</div><h2><span class="titulo b">Así cumple lo que pidió el cliente</span></h2></div>
-  <div class="zona g-plan">
-    <div class="temporadas">
-      <div class="temp a a-arco" style="--c:var(--tinta)"><small>Febrero</small><b>Temporada 1</b><p>Lanzamiento<br>«De eso sí se habla»</p></div>
-      <div class="temp a a-arco" style="--c:var(--rojo);--d:.15s"><small>Mayo</small><b>Temporada 2 · Amor</b><p>«La ropa sucia se lava en escena»</p></div>
-      <div class="temp a a-arco" style="--c:var(--azul);--d:.3s"><small>Agosto</small><b>Temporada 3 · Cordura</b><p>«Al mal tiempo, la cara que tengas»</p></div>
-      <div class="temp a a-arco" style="--c:var(--amarillo);--d:.45s;--tx:#111"><small>Noviembre</small><b>Temporada 4 · Rebelión</b><p>«Calladita no te ves»</p></div>
-      <div class="temp-nota a a-sube" style="--d:.7s"><span class="mano c-rojo">4 temporadas,</span> un dicho nuevo en cada una.</div>
-    </div>
-    <div class="mecanicas">
-      <div class="tarj a a-sube" data-p="1"><div class="et c-rojo">Mejor valorado por los asistentes</div><h4>El sello «Alguien tenía que decirlo»</h4><p>Al salir, cada persona escanea un código, califica de 1 a 5 y completa la frase. Sus frases y el puntaje son las piezas de la semana siguiente.</p></div>
-      <div class="tarj a a-sube" data-p="1" style="--d:.12s"><div class="et c-azul">Mejor valorado por los conocedores</div><h4>Función de conocedores</h4><p>Una noche previa para maestros de las academias, críticos y directores. Sus frases salen con nombre y cargo.</p></div>
-      <div class="tarj a a-sube" data-p="2"><div class="et" style="color:#b98300">Del 20 % al 30 %</div><h4>«Tráelo a que le lleven la contraria»</h4><p>Cada asistente recibe un dicho para tachar y un enlace para invitar a alguien. El público de hoy trae al de mañana.</p></div>
-      <div class="tarj a a-sube" data-p="2" style="--d:.12s"><div class="et">Se replica en digital</div><h4>«Tacha tu dicho»</h4><p>Plantilla de historia, audios de 30 segundos («mi monólogo») y la palabra MONÓLOGOS por mensaje, como ya lo hace la marca.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 18 · CIERRE -->
-<section class="lam cierre" data-cap="9" data-titulo="Cierre">
-  <div class="c-centro">
-    <div class="rotulo a a-sube">RELATOS INTENSOS PARA MENTES TRAVIESAS · 2027</div>
-    <div class="bloque-titulo c-tit-fin" data-lineas="cierre"></div>
-    <p class="c-gracias mano2 a a-sube" style="--d:1.6s">Gracias.</p>
-  </div>
-  <div class="c-pie a a-sube" style="--d:2s">
-    <div><b>William Fonseca y Mariana Silva</b><br>Publicidad 2 · Corte 3 · Parcial final<br>Docente: Rüdiger Stuart González<br>Politécnico Grancolombiano · 2026</div>
-    <div class="c-logo"><span data-logo="96"></span></div>
-    <div class="fuentes"><b>Fuentes</b><br>Brief del caso y visita al Teatro Cofal (13-nov-2026) · Instagram @contradiccionarteatro · DANE, Encuesta de Consumo Cultural 2020 · Encuesta Nacional de Salud Mental 2025 (vía Cambio) · Encuesta Bienal de Culturas de Bogotá 2023 (vía El Tiempo).<br>Rostros, flores y fondos generados con IA; voces clonadas con permiso. Las reseñas y puntajes son ejemplos de formato.</div>
-  </div>
-</section>
+</div>
 
 </main>
 </div>
 
-<!-- telón de transición -->
 <div id="telon" aria-hidden="true"><i></i><i></i><i></i></div>
+<audio id="musica" src="assets/audio/musica-fondo.mp3" loop preload="auto"></audio>
 
-<!-- barra de navegación -->
-<nav id="barra">
-  <button id="btn-indice" aria-label="Índice" title="Índice (M)"><i></i><i></i><i></i></button>
-  <div id="progreso"></div>
-  <span id="contador">01 / 19</span>
-  <button id="btn-prev" aria-label="Anterior" title="Anterior (←)">‹</button>
-  <button id="btn-next" aria-label="Siguiente" title="Siguiente (→)">›</button>
-  <button id="btn-full" aria-label="Pantalla completa" title="Pantalla completa (F)">⤢</button>
-</nav>
-<div id="pista">Usa <b>→</b> o toca para avanzar</div>
-<aside id="indice" hidden><div class="ind-caja papel"><div class="rotulo">ÍNDICE</div><ol id="indice-lista"></ol><p>Teclas: → siguiente · ← anterior · F pantalla completa · M índice</p></div></aside>
-
-<script src="js/kv.js"></script>
-<script src="js/piezas-datos.js"></script>
 <script src="js/deck.js"></script>
+<script src="js/carrusel.js"></script>
+<script src="js/video.js"></script>
+<script>DECK.iniciar();</script>
 </body>
 </html>
