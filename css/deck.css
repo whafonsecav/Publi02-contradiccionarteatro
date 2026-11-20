@@ -722,3 +722,10 @@ body.quieto *, body.quieto *::before, body.quieto *::after { transition: none !i
 
 /* Mientras el video completo suena centrado, ningún aviso cerca de la pantalla */
 #video.v-intro .tel-aviso { opacity: 0; }
+
+/* Plataforma copy: subtitulares (nueva temporada, producto y atributos) */
+.sub-lista { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-top: 22px; }
+.sub-lista .attr-g { font: 800 30px var(--f-rot); letter-spacing: .08em; text-transform: uppercase; }
+/* Aviso del video: pequeño y sutil, debajo de los botones */
+.tel > .tel-aviso { background: none; border: 0; font: 600 18px var(--f-rot); opacity: .7; padding: 4px 0; }
+.tel > .tel-aviso i { height: 3px; }
