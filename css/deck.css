@@ -665,3 +665,7 @@ body.quieto *, body.quieto *::before, body.quieto *::after { transition: none !i
 .pa-af-2 { left: 1025px; top: 240px; width: 310px; }
 .pa-af-3 { left: 1270px; top: 252px; width: 310px; }
 .pa-af-4 { left: 1515px; top: 300px; width: 310px; }
+
+/* Fuente al lado de cada cifra */
+.cita { display: block; margin-top: 6px; font: 600 19px/1.3 var(--f-rot); font-style: normal; opacity: .78; letter-spacing: 0; text-transform: none; }
+.oscura .cita, .caja-negra .cita { opacity: .85; }
